@@ -338,6 +338,7 @@ function headerHTML() {
 	      </nav>
         
         <div class="sidebar-section">
+        <iframe class="center" src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>
         <div class="sidebar-title">Status</div>
           <blockquote>
             <span class="bold">listening to:</span>
@@ -375,9 +376,8 @@ function headerHTML() {
           </details>
         </div>
 
-        <hr class="nav">
-
         <nav class="mobileside">
+          <hr class="nav">
           <details id="navdrop"><summary class="sum"><div id="navdrophead">Navigation</div></summary>
             <ul>
 	          <li><a href="/" class="hvr-wobble-horizontal">home</a></li>
@@ -416,8 +416,6 @@ function headerHTML() {
           </details>
           </details>
         </nav>
-
-        <iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>
 
         <div class="sidebar-section">
           <div class="sidebar-title"><label for="fontFamily">Font/Theme</label></div>
