@@ -1,0 +1,54 @@
+/* -------------------------------------------------------- */
+/* FONTS */
+/* -------------------------------------------------------- */
+
+@font-face {
+  font-family: 'RainyHearts';
+  src: url('./fonts/rainyhearts/rainyhearts.eot');
+  src: url('./fonts/rainyhearts/rainyhearts.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/rainyhearts/rainyhearts.woff2') format('woff2'),
+  url('./fonts/rainyhearts/rainyhearts.woff') format('woff'),
+  url('./fonts/rainyhearts/rainyhearts.ttf') format('truetype'),
+  url('./fonts/rainyhearts/rainyhearts.svg#RainyHearts') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Summer';
+  src: url('./fonts/summer/summer.eot');
+  src: url('./fonts/summer/summer.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/summer/summer.woff2') format('woff2'),
+  url('./fonts/summer/summer.woff') format('woff'),
+  url('./fonts/summer/summer.ttf') format('truetype'),
+  url('./fonts/summer/summer.svg#Summer') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Spirit';
+  src: url('./fonts/spirit/spirit.eot');
+  src: url('./fonts/spirit/spirit.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/spirit/spirit.woff2') format('woff2'),
+  url('./fonts/spirit/spirit.woff') format('woff'),
+  url('./fonts/spirit/spirit.ttf') format('truetype'),
+  url('./fonts/spirit/spirit.svg#Spirit') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DiamondDreams'; /*a name to be used later*/
+  src: url('/fonts/DiamondDreams-yw8Dq.ttf'); /*URL to font*/
+}
+
+@font-face {
+  font-family: 'Delius'; /*a name to be used later*/
+  src: url('/fonts/Delius-Regular.ttf'); /*URL to font*/
+}
+
+@font-face {
+  font-family: 'CyborgSister'; /*a name to be used later*/
+  src: url('/fonts/CyborgSister.ttf'); /*URL to font*/
+}

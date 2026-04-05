@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>inspiration station</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <link id="colortheme" href="./light.css" rel="stylesheet" type="text/css">
+    <link href="../lists/dragula.css" rel="stylesheet" type="text/css">
+    <link href="../fonts.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+/>
+
+    <script src="../lists/dragula.js"></script>
+    <script src="../lists/drag.js"></script>
+  </head>
+  <body>
+    <div id="start"></div>
+    <header id="top">
+      <div id="infocontainer">
+        <h1>my inspiration station</h1>
+        <img src="../imgs/hangingplant.gif" class="icons" alt="">
+        <p>My curated space for inspiration in good times and bad times alike. This includes tidbits I've picked up around the web and meaningful messages I've received that mean something to me. I made a similar page using Notion (which I use for other purposes), but there are many creative limits, leading to the making of this new home.</p>
+        <p><span style="font-style: italic;">Note: Some photos or clippings are from unknown authors/artists; please let me know if you created something here so I can give you credit!</span><img src="https://64.media.tumblr.com/9621c7aff60673900312f824e1f665e3/tumblr_n8pu1zi9zX1r7y61oo1_100.gifv" style="width: 50px" class="fright"></p>
+        <p>If you have Javascript enabled and are using a larger screen (computer or tablet), you can click the handles in the top right corner of each note and drag them around. This serves no real purpose, but it's fun.</p>
+
+        <div class="right">
+          <details><summary>Change view</summary>
+            <label for="fontFamily">Font:</label>
+            <select name="fontFamily" id="fontFamily">
+              <option value="rainyhearts">my default</option>
+              <option value="Courier New">Courier New</option>
+              <option value="Trebuchet MS">Trebuchet MS</option>
+            </select>
+            <script src="../font-selector.js"></script><br>
+    
+            <label for="themetoggle">Theme:</label>
+            <button id="themetoggle" name="themetoggle" onclick="darkmode()">dark mode</button>
+            <button onclick="lightmode()">light mode</button>
+            <script>
+              // Multiple Theme Switch
+              function lightmode() {
+                document.getElementById('colortheme').setAttribute('href', './light.css');}
+          
+              function darkmode() {
+                document.getElementById('colortheme').setAttribute('href', './dark.css');}
+      
+              function darkmode() {
+                document.getElementById('colortheme').setAttribute('href', './dark.css');
+                localStorage.setItem('theme', 'dark');}
+      
+              function lightmode() {
+                document.getElementById('colortheme').setAttribute('href', './light.css');
+                localStorage.setItem('theme', 'light');}
+      
+              if(localStorage.getItem('theme') == 'dark'){
+                darkmode();}
+              if(localStorage.getItem('theme') == 'light'){
+                lightmode();}
+              // End of Multiple Theme Switch Code
+            </script>
+          </details>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="./">home</a></li>
+          <li><a href="credits.html">credits</a></li>
+          <li><a href="../">main island</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+    <script>
+      Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+        caption: function (fancybox, slide) {
+    return slide.thumbEl?.alt || "";
+  },
+      });
+    </script>
+      <!-- FIRST COLUMN -->
+      <div class="column">
+      </div>
+      <!-- END FIRST COLUMN -->
+
+      <!-- SECOND COLUMN -->
+      <div class="columnwide">
+
+        <section id="affirmationcards" class="color1">
+          <header class="listheader">
+            Credits<span class="handle">&#172;</span>
+          </header>
+          <div class="listtext">
+            <ul>
+              <li>Body font is <a href="https://www.dafont.com/rainyhearts.font" target="_blank" rel="external">RainyHearts</a></li>
+              <li>Display font is <a href="https://pastebin.com/MXv5gvs2" target="_blank" rel="external">Spirit</a></li>
+              <li><a href="https://fancyapps.com/fancybox/" target="_blank" rel="external">Fancybox</a> used for lightbox alternative</li>
+              <li>Original Listfauxgraphy concept by Desert Jaguar; code by <a href="http://kalechips.net" target="_blank">Kalechips</a></li>
+              <li>Font toggle code by <a href="https://pastebin.com/u/punkwasp" target="_blank" rel="external">Punkwasp</a></li>
+              <li>Theme toggle code by <a href="https://solaria.neocities.org/themeswitch" target="_blank" rel="external">Solaria</a></li>
+              <li>Pixel art found around the web, artists unknown unless linked/stated</li>
+              <li>I can't remember where the cursor was found -- please let me know if you created this so I can give you proper credit!</li>
+            </ul>
+          </div>
+          <footer class="foot">
+            <p>+ march 31 2025</p>
+          </footer>
+        </section>
+
+      </div>
+      <!-- END SECOND COLUMN -->
+
+      <!-- THIRD COLUMN -->
+      <div class="column">
+      </div>
+      <!-- END THIRD COLUMN -->
+
+    </main>
+
+    <footer id="bottom">
+      <p>Original Listfauxgraphy concept by Desert Jaguar, code by <a href="http://kalechips.net" target="_blank">Kalechips</a>.</p>
+      <p><a href="#start">Back to top!</a></p>
+    </footer>
+
+  </body>
+</html>

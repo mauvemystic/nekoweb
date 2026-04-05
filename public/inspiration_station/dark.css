@@ -1,0 +1,48 @@
+:root {
+  /* Page background */
+  --background:#4a517a;
+    
+  /* Universal text and link colors */
+  --color:#ffffff;
+  --link:#C8D7DF;
+    
+  /* Font family (can include fallbacks) */
+  --bodyfont: RainyHearts, sans-serif;
+
+  /* List background colors */
+  --color1: #375150;
+  --color2: #2C515F;
+  --color3: #414E53;
+  --color4: #1E5269;
+  --color5: #2D5257;
+    
+  /* Borders for each background color */
+  --color1border:#9AA7A7;
+  --color2border:#95A8AF;
+  --color3border:#9FA6A8;
+  --color4border:#8AAAB8;
+  --color5border:#93A9AC;
+    
+  /* Header background and border */
+  --header: #2D3A3F;
+  --headerborder:#A0A6A8;
+    
+  /* Scrollbars */
+  --scrollbg:#e1e1e100;
+  --scrollcolor:#f1f1f1c9;
+}
+
+body {
+  background: url(./darkwater.png);
+}
+
+button, select {
+  background-color: #696f84;
+  border: 1px solid #ffffff6d;
+  color: var(--color);
+  background-position: center;
+}
+
+button:hover, button:focus, select:hover, select:focus {
+  background-color: #545869;
+}

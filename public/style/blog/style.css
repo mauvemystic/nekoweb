@@ -1,0 +1,300 @@
+* {
+  cursor: url('/cursors/cursor_point1e1.gif') 0 0, default;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  font-size: 16px;
+  font-family: 'Delius', Verdana, sans-serif;
+  margin: 0;
+}
+
+p {
+  line-height: 1.6em;
+}
+
+hr {
+  border-width: 1px 0 0 0;
+  margin: 2.5em 0;
+}
+
+#content ul {
+  line-height: 1.5em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.images {
+  display: flex;
+  width: calc(100% + 5px + 5px);
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.images img {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.caption {
+  margin-top: 0;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+a:hover { 
+  background-color: #fbfafe;
+  cursor: url('/cursors/cursor_anipoint1e.gif') 0 0, default;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family:  DiamondDreams, Geneva, sans-serif;
+  margin-bottom: -0.25em;
+}
+
+h1 {
+  font-size: 2.09em;
+}
+
+h2, h3 {
+  margin-bottom: -0.25em;
+}
+
+h4 {
+  font-size: 1.4em;
+  margin-top: 0.25em;
+  float: right;
+}
+
+/* #CONTAINER is the rectangle that contains everything but the background! */
+#container {
+  margin: 3em auto;
+  width: 90%;
+	max-width: 700px;
+  outline-style: ridge;
+  outline-width: 2px;
+  outline-offset: 0;
+  border-radius: 15px;
+}
+
+#content {
+  padding: 10px 8% 20px 8%;
+}
+
+.flexcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  margin-top: 1.15em;
+  width: 100%;
+}
+
+/* HEADER STYLE */
+#header {
+  padding: 0 5%;
+  border-style: ridge;
+  border-width: 0 0 2px 0;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#header ul {
+  list-style-type: none;
+  padding: 0.5em 0;
+  margin: 0;
+}
+
+#header li {
+  font-size: 1.3em;
+  display: inline-block;
+  margin-right: 1.4em;
+  margin-bottom: 0.2em;
+  margin-top: 0.2em;
+}
+
+#header li:last-child {
+  margin-left: -1em;
+}
+
+#header li a {
+  text-decoration: none;
+  background-color: inherit;
+}
+
+#header li a:hover {
+  text-decoration: underline;
+}
+
+/* POST LIST STYLE */
+#postlistdiv ul {
+  font-size: 1.2em;
+  padding: 0;
+  list-style-type: none;
+}
+
+#recentpostlistdiv ul {
+  font-size: 1.1em;
+  padding: 0;
+  list-style-type: none;
+}
+
+.moreposts {
+  font-size: 0.8em;
+  margin-top: 0.2em;
+}
+
+/* NEXT AND PREVIOUS LINKS STYLE */
+#nextprev {
+  text-align: center;
+  margin-top: 1.4em;
+}
+
+/* DISQUS STYLE */
+#disqus_thread {
+  margin-top: 1.6em;
+}
+
+/* FOOTER STYLE */
+#footer {
+  font-size: 0.6em;
+  text-align: center;
+  padding: 0 5% 10px 5%;
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: 'DiamondDreams'; /*a name to be used later*/
+  src: url('/fonts/DiamondDreams-yw8Dq.ttf'); /*URL to font*/
+}
+
+@font-face {
+  font-family: 'Delius'; /*a name to be used later*/
+  src: url('/fonts/Delius-Regular.ttf'); /*URL to font*/
+}
+
+#postTitleH1 {
+  margin-top: 2em;
+  margin-bottom: -0.75em;
+}
+
+#postTitleH1::before {
+  content: url(/imgs/pflowers.gif) " ";
+  position: relative;
+  bottom: 2px;
+}
+
+#recentpostlistdiv a::before {
+  padding-right: 0.2em;
+  position: relative;
+  top: 1px;
+}
+
+button {
+  font-family: Delius;
+  border-width: 1px;
+}
+
+#tagList ul {
+  margin-inline-start: -1em;
+}
+
+#taggedPosts {
+  padding-top: 1em;
+  margin-inline-start: -1em;
+}
+
+#postTags {
+  margin-bottom: 3em;
+}
+
+@media only screen and (min-width: 600px) {
+  .small {
+    max-width: 60%;
+    height: auto;
+  }
+}
+
+@media (max-width: 570px) {
+  .flexcontainer {
+    text-align: center;
+  }
+
+  #tagList ul {
+    text-align: left;
+  }
+}
+
+
+/***
+EZ Gallery by netfriend - https://netfriend.neocities.org/ez-gallery/
+Released under the Unlicense - https://unlicense.org/
+***/
+
+.ezgallery.montage { 
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.ezgallery.montage img {
+  flex: auto;
+  margin: 0 5px 5px 0;
+  object-fit: contain;
+  object-position: bottom;
+  height: 200px;
+}
+
+.ezgallery.horizontal { 
+  display: grid;
+  grid-gap: 5px;
+  gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.ezgallery.horizontal a {
+  text-align: center;
+}
+
+.ezgallery.horizontal img {
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 5px 5px 0;
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: contain;
+  object-position: bottom;
+}

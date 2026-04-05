@@ -1,0 +1,2142 @@
+/* -------------------------------------------------------- */
+/* VARIABLES */
+/* -------------------------------------------------------- */
+
+/* Variables are used like this: var(--text-color) */
+:root {
+  /* Text: */
+  --font: RainyHearts, Monaco, monospace;
+  --heading-font: Summer, Lucida Console, monospace;
+  --font-size: 17px;
+
+  /* Other Settings: */
+  --margin: 10px;
+  --padding: 30px;
+  --round-borders: 15px;
+  --sidebar-width: 220px;
+
+  --window-frame: #0a0a0a;
+  --button-highlight: #ffffff;
+  --button-face: #dfdfdf;
+  --button-shadow: #808080;
+  --border-raised-outer: inset -1px -1px var(--window-frame),
+    inset 1px 1px var(--button-highlight);
+  --border-raised-inner: inset -2px -2px var(--button-shadow),
+    inset 2px 2px var(--button-face);
+}
+
+/* -------------------------------------------------------- */
+/* BASICS */
+/* -------------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+  cursor: url('/cursors/crescentmoon.cur') 13 3, default;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: var(--font-size);
+  margin: 0;
+  padding: var(--margin);
+  color: var(--text-color);
+  font-family: 'RainyHearts';
+  line-height: 1.2;
+  background: var(--background-color);
+  background-image: url("/starrynight-wp.gif");
+  background-repeat: repeat;
+}
+
+::selection {
+  /* (Text highlighted by the user) */
+  background: #f1f1d0a8;
+}
+
+mark {
+  /* Text highlighted by using the <mark> element */
+  border-radius: 1em 0;
+  padding: .25rem;
+  font-weight: 700;
+}
+
+small {
+  font-size: 0.9em;
+}
+
+/* BASIC CLASSES */
+.accent {
+  color: var(--accent-color);
+}
+
+.bold {
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* LINKS */
+a {
+  text-decoration: underline;
+}
+
+a,
+a:visited, 
+footer a, 
+footer a:visited, 
+main a, 
+main a:visited {
+  color: var(--link-color);
+}
+
+a:hover,
+a:focus, 
+a img, 
+footer a:hover 
+footer a:focus,
+.cbox:hover {
+  color: var(--link-color-hover);
+  text-decoration: none;
+  cursor: url("/cursors/star.png"), pointer; 
+}
+
+.img:hover {
+  background-color: transparent;
+}
+
+/* -------------------------------------------------------- */
+/* LAYOUT */
+/* -------------------------------------------------------- */
+
+.layout {
+  width: 1100px;
+  display: grid;
+  grid-gap: var(--margin);
+  grid-template: "header header" auto "main rightSidebar" auto "footer footer" auto / auto var(--sidebar-width);
+  /* Confused by the grid? Check out my tutorial: https://petrapixel.neocities.org/coding/positioning-tutorial#grid */
+}
+
+main {
+  grid-area: main;
+  padding: var(--padding);
+  background: var(--content-background-color);
+  border: var(--border);
+  border-radius: var(--round-borders);
+}
+
+/* -------------------------------------------------------- */
+/* HEADER */
+/* -------------------------------------------------------- */
+
+header {
+  grid-area: header;
+  font-size: 1.2em;
+  border: var(--border);
+  border-radius: var(--round-borders);
+  text-align: center;
+}
+
+.header-content {
+  padding: var(--padding);
+}
+
+.header-title {
+  font-family: Summer;
+  font-size: 2.4em;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.header-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* -------------------------------------------------------- */
+/* SIDEBARS */
+/* -------------------------------------------------------- */
+
+aside {
+  grid-area: aside;
+  border: var(--border);
+  border-radius: var(--round-borders);
+  overflow: hidden;
+  background: var(--sidebar-background-color);
+  padding: 20px;
+  color: var(--sidebar-text-color);
+}
+
+.left-sidebar {
+  grid-area: leftSidebar;
+}
+
+.right-sidebar {
+  grid-area: rightSidebar;
+}
+
+.sidebar-title {
+  font-weight: bold;
+  font-size: 1.4em;
+  font-family: Summer;
+  text-align: center;
+  margin-bottom: -0.65em;
+}
+
+.sidebar-section:not(:last-child) {
+  margin-bottom: 2em;
+}
+
+.sidebar-section:last-child {
+  margin-top: 2em;
+}
+
+.sidebar-section ul,
+.sidebar-section ol {
+  padding-left: 1.5em;
+  line-height: 1.5em;
+}
+
+.sidebar-section ul li span.bold {
+  color: var(--accent-color);
+}
+
+.sidebar-section > *:not(p):not(ul):not(ol):not(blockquote) {
+  margin-top: 10px;
+}
+
+/* Sidebar Blockquote: */
+.sidebar-section blockquote {
+  padding: 15px;
+  margin: 1em 0;
+  border-radius: 15px;
+  overflow: auto;
+  border-style: dashed solid;
+  border-color: var(--link-color);
+  border-width: 1px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.sidebar-section blockquote > *:first-child {
+  margin-top: 0;
+}
+
+.sidebar-section blockquote > *:last-child {
+  margin-bottom: 0;
+}
+
+/* -------------------------------------------------------- */
+/* FOOTER */
+/* -------------------------------------------------------- */
+
+footer {
+  grid-area: footer;
+  border: var(--border);
+  border-radius: var(--round-borders);
+  overflow: hidden;
+  font-size: 0.75em;
+  padding: 15px;
+  background: var(--content-background-color);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* -------------------------------------------------------- */
+/* SCROLLBAR (not for Firefox) */
+/* -------------------------------------------------------- */
+
+body::-webkit-scrollbar,
+.scrollbox::-webkit-scrollbar {
+  width: 16px;
+}
+
+.scrollbox::-webkit-scrollbar, .scrollbox::-webkit-scrollbar-corner, .scrollbox::-webkit-scrollbar-thumb, 
+.scrollbox::-webkit-scrollbar-track {
+  border-radius: 8px;
+}
+
+body::-webkit-scrollbar-corner,
+.scrollbox::-webkit-scrollbar-corner {
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  box-shadow: inset 1px 1px 0 #fff;
+  background: #cdcccd;
+}
+
+body::-webkit-scrollbar-thumb,
+.scrollbox::-webkit-scrollbar-thumb {
+  box-shadow: inset 1px 1px 0 var(--tippy-background-color), inset -1px -1px 0 var(--border-color);
+  width: 14px;
+  border: 1px solid var(--background-color);
+  background-color: var(--sidebar-background-color);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body::-webkit-scrollbar-thumb:horizontal,
+.scrollbox::-webkit-scrollbar-thumb:horizontal {
+  box-shadow: inset 1px 1px 0 var(--tippy-background-color), inset -1px -1px 0 var(--border-color);
+  width: 14px;
+  border: 1px solid #000;
+  background-image: url(https://cdn.discordapp.com/attachments/887921355947933726/917968280742948924/horizontal_scrollbar_bg.png);
+  background-color: var(--sidebar-background-color);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body::-webkit-scrollbar-track,
+.scrollbox::-webkit-scrollbar-track {
+  border: 1px solid var(--border-color);
+}
+
+body::-webkit-scrollbar-button:vertical:increment,
+.scrollbox::-webkit-scrollbar-button:vertical:increment {
+  display: none;
+  background-image: url(/musicplayer/minimize.png);
+  background-color: #DEDEDE;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+body::-webkit-scrollbar-button:vertical:decrement,
+.scrollbox::-webkit-scrollbar-button:vertical:decrement {
+  display: none;
+  background-image: url(https://cdn.discordapp.com/attachments/887921355947933726/917964623850917978/decrement_1.png);
+  background-color: #DEDEDE;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  width: 16px;
+  height: 16px;
+}
+            
+body::-webkit-scrollbar-button:horizontal:increment,
+.scrollbox::-webkit-scrollbar-button:horizontal:increment {
+  background-image: url(https://cdn.discordapp.com/attachments/887921355947933726/917966460477906944/horizantal_increment.png);
+  background-color: #DEDEDE;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 16px;
+  height: 16px;
+}
+
+/* -------------------------------------------------------- */
+/* NAVIGATION */
+/* -------------------------------------------------------- */
+
+nav {
+  margin-bottom: 3em;
+}
+
+nav .sidebar-title {
+  margin-bottom: 0;
+  font-size: 1.5em;
+}
+
+nav ul {
+  margin: 0 0;
+  padding: 0;
+  list-style: none;
+  user-select: none;
+}
+
+nav ul li {
+  margin-bottom: 0;
+  line-height: 1em;
+}
+
+nav > ul li > a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.2em;
+  line-height: 1em;
+}
+
+nav > ul li > a:hover,
+nav details ul li > a:hover {
+  background-color: transparent;
+}
+
+nav > ul li > a,
+nav > ul li > details summary {
+  padding: 5px;
+}
+
+nav > ul li > a.active,
+nav > ul li > details.active summary {
+  font-weight: bold;
+  color: var(--link-color-hover);
+}
+
+nav ul ul li > a {
+  padding-left: 10px;
+}
+
+nav details:not(#navdrop) {
+  font-size: 1.2em;
+  border: none;
+  border-radius: 10px;
+  text-align: left;
+  background-color: transparent;
+}
+
+nav details:not(#navdrop) summary {
+  font-weight: unset;
+}
+
+nav details:not(#navdrop) summary:hover, 
+nav details:not(#navdrop) summary:active, 
+nav details:not(#navdrop)[open] summary {
+  background-color: var(--sidebar-background-color);
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+nav details:not(#navdrop) ul {
+  padding-inline-start: 0.65em;
+}
+
+nav details:not(#navdrop) ul li, 
+ol.songs {
+  list-style-position: inside;
+}
+
+nav details:not(#navdrop) summary::marker,
+:is(::-webkit-details-marker) {
+  content: "⟡";
+}
+
+nav details:not(#navdrop)[open] summary::marker {
+  content: "⟣";
+}
+
+nav details:not(#navdrop) ul li::marker {
+  content: "↳";
+  font-size: 0.5em; 
+}
+
+nav details:not(#navdrop) ul li a {
+  text-decoration: none;
+  line-height: 1.5em;
+}
+
+nav details:not(#navdrop)[open] {
+  padding: 0;
+}
+
+/* Wobble Horizontal Animation on Nav */
+@-webkit-keyframes hvr-wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+  33.3% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes hvr-wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+  33.3% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.hvr-wobble-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+#navdrop .hvr-wobble-horizontal:hover, .hvr-wobble-horizontal:hover, .hvr-wobble-horizontal:focus, .hvr-wobble-horizontal:active {
+  -webkit-animation-name: hvr-wobble-horizontal;
+  animation-name: hvr-wobble-horizontal;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+/* NAVIGATION IN HEADER (NOT IN CURRENT USE) */
+header nav {
+  margin-bottom: 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  border-radius: 6px;
+}
+
+header nav ul li {
+  position: relative;
+}
+
+header nav ul li:first-child > a {
+  padding-left: 0;
+}
+
+header nav ul li:last-child > a {
+  padding-right: 0;
+}
+
+/* Subnavigation (Drop-Down): */
+header nav ul ul {
+  background: var(--content-background-color);
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  padding: 0.5em;
+  z-index: 1;
+  border: var(--border);
+  min-width: 100%;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+}
+
+header nav ul li:hover ul,
+header nav ul li:focus-within ul {
+  display: block;
+}
+
+header nav ul li strong {
+  color: var(--link-color);
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+header nav ul ul li a {
+  display: block;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+main ul ul {
+  padding-inline-start: 0;
+  list-style: inside;
+}
+
+main ul ul li::marker {
+  content: "↳ ";
+  font-size: 0.5em;
+}
+
+main ul ul:first-child {
+  margin-top: 0.25em;
+}
+
+/* -------------------------------------------------------- */
+/* CONTENT */
+/* -------------------------------------------------------- */
+
+main {
+  line-height: 1.5;
+}
+
+main p,
+main .image,
+main .full-width-image,
+main .two-columns {
+  margin: 0.75em 0;
+}
+
+main ol,
+main ul {
+  margin: 0.5em 0;
+  padding-left: 1.5em;
+}
+
+main ol li,
+main ul li {
+  margin-bottom: 0.2em;
+  line-height: 1.3;
+}
+
+main ol {
+  padding-left: 2em;
+}
+
+main blockquote {
+  padding: 15px;
+  margin: 1em 0;
+  border-radius: 10px;
+}
+
+main pre {
+  margin: 1em 0 1.5em;
+  overflow: auto;
+}
+
+main code {
+  text-transform: none;
+}
+
+main hr {
+  border-top: var(--border);
+  margin: 1.5em 0;
+}
+
+button {
+  font-family: RainyHearts;
+  font-size: 1em;
+  border: 1px solid;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+/* Details Styling (Dropdowns) */
+details {
+  border: 1px solid #C1C8D7;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.2s background linear;
+  margin-bottom: 0.3em;
+}
+
+summary {
+  font-weight: bold;
+}
+
+details[open] {
+  padding: 0.5em 1em;
+  border-radius: 15px;
+}
+
+details[open] p {
+  animation: animateDown 0.2s linear forwards;
+}
+
+@keyframes animateDown {
+  0% {
+    opacity: 0;
+    transform: translatey(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translatey(0);
+  }
+}
+
+details summary::marker,
+:is(::-webkit-details-marker) {
+  content: "+ ";
+  font-family: monospace;
+  font-weight: bold;
+}
+
+details[open] summary::marker {
+  content: "- ";
+}
+
+/* Resources Dropdowns */
+.resources {
+  text-align: left;
+  width: 100%;
+}
+
+/* Altar Space Dropdowns */
+.resources, 
+.spiritual, 
+.notes {
+  padding: 0.5em 0.5em 0;
+}
+
+.spiritual[open]::details-content {
+  text-align: left;
+}
+
+.spiritlink::before {
+  content: " " url(/imgs/purplebullet.gif) " ";
+}
+
+/* Medialog Dropdowns */
+.notes {
+  display: inline-block;
+  line-height: 0.8em;
+  text-align: left;
+}
+
+.notes[open] {
+  display: block;
+  width: 70%;
+}
+
+.notes summary {
+  cursor: url('/cursors/star.png') 0 0, default;
+  margin-top: -0.4em;
+}
+
+.notes[open] summary {
+  margin-top: 0;
+}
+
+.notes[open]::details-content {
+  display: inline-block;
+  padding: 0.25em;
+}
+
+.notes summary::marker,
+:is(::-webkit-details-marker) {
+  content: url(/imgs/talkbubble.gif);
+}
+
+.notes[open] summary::marker {
+  content: url(/imgs/minus.png);
+  width: 10px;
+}
+
+/*Scrollboxes */
+.scrollbox {
+  height: 200px;
+  overflow-y: scroll;
+  margin-bottom: 5em;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1em;
+  background-color: #00000010;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  font-size: 1.1em;
+  text-align: left;
+  padding: 5px 10px;
+}
+
+th:first-child {
+  text-align: right;
+}
+
+td:first-child {
+  font-weight: 700;
+  text-align: right;
+}
+
+td {
+  padding: 3px 10px;
+}
+
+/* -------------------------------------------------------- */
+/* HEADINGS: */
+/* -------------------------------------------------------- */
+
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+  font-family: Summer;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+main h1:first-child,
+main h2:first-child,
+main h3:first-child,
+main h4:first-child,
+main h5:first-child,
+main h6:first-child {
+  margin-top: 0em;
+}
+
+main h1 {
+  font-size: 2.1em;
+  text-align: center;
+}
+
+#log h2 {
+  margin-bottom: -0.5em;
+}
+
+main h2 {
+  font-size: 1.9em;
+}
+
+main h3 {
+  font-size: 1.7em;
+}
+
+main h4, 
+.resources h2 {
+  font-size: 1.5em;
+}
+
+main h4 {
+  display: inline-block;
+}
+
+main h5 {
+  font-size: 1.3em;
+}
+
+main h6 {
+  font-size: 1.1em;
+}
+
+/* Index heading (h1) */
+.OGmZ_ {
+  font-size: 2.1em;
+  font-weight: 700;
+  font-family: Summer;
+}
+
+
+.flexabout h2 {
+  font-size: 1.4em;
+}
+
+.flexabout h2, 
+.tabcontent h2, 
+.musicreviews h4, 
+.flexcontainer h2, 
+h2.c {
+  text-align: center;
+}
+
+#flexlog h2,
+.tabcontent h3,
+.collection h2, 
+.stylehead {
+  background-color: var(--header-background-color);
+  padding: 11px 0px 0px 9px;
+  border-radius: 15px;
+  letter-spacing: 0.2em;
+  background-image: url(/style/cartographer.png);
+}
+
+.flexaltar h2, 
+.flexaltar1 h2 {
+  display: grid;
+  grid-template-columns: minmax(20px, 1fr) auto minmax(20px, 1fr);
+  align-items: center;
+  text-align: center;
+  grid-gap: 10px;
+  width: 100%;
+}
+
+.flexaltar h2:before, 
+.flexaltar1 h2:before, 
+.flexaltar h2:after, 
+.flexaltar1 h2:after {
+  content: '';
+  border-top: 3px solid var(--border-color);
+  position: relative;
+  bottom: 6px;
+}
+
+.stylehead {
+  margin-top: 2em;
+}
+
+details summary h2, 
+details summary h3 {
+  display: inline-block;
+}
+
+.minitapebox h3 {
+  font-size: 1em;
+  margin: 2em 0em -0.5em 1em;
+}
+
+.tabcontent h4 {
+  text-align: left;
+}
+
+/* -------------------------------------------------------- */
+/* FLEX BOXES */
+/* -------------------------------------------------------- */
+
+#flexabout, 
+#flexindex, 
+.flextodo {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#flexindexbuttons, 
+.flex-music {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexstyle, 
+.flexvideos, 
+.flexaltar, 
+.flexaltar1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#flexabout {
+  padding: 1.5em;
+}
+
+#flexindex {
+  gap: 30px;
+}
+
+#flexindexbuttons {
+  align-content: space-between;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+#flexlog {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2em;
+}
+
+.flexcontainer {
+  display: flex;
+  gap: 0.25em;
+}
+
+.flexcontainer > div {
+  margin: 3px;
+  padding: 10px;
+  font-size: 1em;
+}
+
+.flexstyle {
+  gap: 3em;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.flexvideos {
+  gap: 20px 30px;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.flexvinyl {
+  display: flex;
+  gap: 65px 65px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flextodo {
+  flex-direction: row;
+  gap: 2.50em 1em;
+  flex-wrap: wrap;
+}
+
+/* Inside flexbox styling */
+.ytvid {
+  width: 300px;
+}
+
+.flexaltar, 
+.flexaltar1 {
+  gap: 1.25em;
+  justify-content: space-around;
+  margin-top: 2em;
+}
+
+.altar {
+  flex-basis: 40%;
+}
+
+.altar p {
+  margin-top: 0;
+ }
+
+.pullacard {
+  width: 30%;
+}
+
+.flex-music {
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.musicreviews {
+  height: 937px;
+  overflow: auto;
+  flex: 1;
+}
+
+.palette {
+  width: 69%;
+  align-content: center;
+}
+/* -------------------------------------------------------- */
+/* WASHI TAPE BOXES */
+/* -------------------------------------------------------- */
+
+.tapebox, 
+.minitapebox {
+  width: 70vw;
+  position: relative;
+  background-color: var(--box-background-color);
+  box-shadow: 0 4px 10px -5px rgba(0, 0, 0, .5);
+  border-radius: 5px;
+}
+
+.tapebox:before, 
+.minitapebox:before {
+  display: block;
+  position: absolute;
+}
+
+.tapebox p, 
+.minitapebox * {
+  padding: 0 1em;
+}
+
+.tapebox {
+  max-width: 500px;
+  min-width: 210px;
+  margin: 0 auto;
+  margin-bottom: 2.5em;
+  padding-bottom: 2em;
+}
+
+.tapebox:before {
+  content: url('/imgs/flowers-purple.png');
+  right: -75px;
+  top: -95px;
+  transform: scale(0.30) rotate(3deg);
+}
+
+.tapebox p {
+  margin-left: 5px;
+}
+
+.tapeheader {
+  text-align: center;
+  font-size: 1.7em;
+  padding-top: 1.65em;
+  margin-bottom: -0.5em;
+}
+
+/* MINI TAPE BOX */
+.minitapebox {
+  min-width: 200px;
+  max-width: 340px;
+  padding-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+}
+
+.minitapebox:before {
+  content: url('/imgs/starsmoon.png');
+  left: -135px;
+  top: -65px;
+  transform: scale(0.30) rotate(-3deg);
+}
+
+.minitapeheader {
+  text-align: center;
+  font-size: 1.3em;
+  padding-top: 2em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-bottom: -0.75em;
+}
+
+/* -------------------------------------------------------- */
+/* LIST CUSTOMIZATION */
+/* -------------------------------------------------------- */
+
+ul.heartbullets li::marker, 
+ul.crossbullets li::marker, 
+ul.starbullets li::marker {
+  margin:  15px;
+  padding: 0px;
+}
+
+ul.heartbullets li::marker {
+  content: url("/imgs/purpheartbul.gif") " ";
+}
+
+ul.crossbullets li::marker {
+  content: url("/imgs/purpcrossbul.gif") " ";
+}
+
+ul.starbullets li::marker {
+  content: url("/imgs/purpstarbul.gif") " ";
+}
+
+/* -------------------------------------------------------- */
+/* CONTENT IMAGES */
+/* -------------------------------------------------------- */
+
+.blinkie, 
+.stamp, 
+.button {
+  background:#ffffff00;
+  padding:1px;
+  margin:1px;
+}
+
+.blinkie {
+  width:150px;
+  height:20px;
+}
+
+.stamp {
+  width:111px;
+  height:68px;
+}
+
+.button {
+  width: 88px;
+  height: 31px;
+}
+
+.medialogposter {
+  width: 165px;
+  height: 250px;
+  border-width:  7px;
+  border-style:  solid;
+}
+
+.medialogalbum {
+  width: 230px;
+  height: 230px;
+  border-width:  7px;
+  border-style:  solid;
+}
+
+.medialogposter:hover,
+.medialogalbum:hover, 
+.medialogimg:hover {
+  transform: scale(1.05);
+  /* (Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.medialogimg {
+  float: left;
+  margin: 1em 2.3em 1em 0.9em;
+  width: 165px;
+  height: 250px;
+  border-width:  7px;
+  border-style:  solid;
+}
+
+.image {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+.full-width-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.images {
+  display: flex;
+  width: calc(100% + 5px + 5px);
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.images img {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* -------------------------------------------------------- */
+/* MISC ELEMENTS */
+/* -------------------------------------------------------- */
+
+/* Site Button: */
+.site-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.site-button textarea {
+  font-family: monospace;
+  font-size: 0.7em;
+  margin-top: 10px;
+}
+
+/* Alert Boxes */
+.alert {
+  text-align: center;
+  padding: 8px;
+  margin: 2em 0;
+}
+
+/* Info Boxes */
+.info {
+  border-radius: 7px;
+  padding: 15px;
+  margin-bottom: 3em;
+}
+
+/* Links as buttons */
+.linkbutton {
+  background-color: var(--sidebar-background-color);
+  text-decoration: none;
+  padding: 4px;
+  border-radius: 11px;
+  border: 1px solid #C1C8D7;
+  margin: 1em auto;
+  text-align: center;
+}
+
+.linkbutton::after {
+  content: " ⤑";
+}
+
+.linkbutton a:hover {
+  background-color: var(--link-background-color-hover);
+}
+
+/* Clique Scrollbox */
+.clique {
+  border: 1px dashed #0000007a;
+  padding: 0em 0.75em 0.5em 0.75em;
+  height: 130px;
+  overflow: auto;
+  border-radius: 10px;
+  align-self: center;
+  margin-bottom: 2em;
+}
+
+.clique p {
+  line-height: 1em;
+}
+
+/* COLUMNS: */
+.two-columns {
+  display: flex;
+}
+
+.two-columns > * {
+  flex: 1 1 0;
+  margin: 0;
+}
+
+.two-columns > *:first-child {
+  padding-right: 0.75em;
+}
+
+.two-columns > *:last-child {
+  padding-left: 0.75em;
+}
+
+/* Resource Links */
+
+
+.resourcefave::before {
+  content: " " url(/imgs/heart.png) " ";
+}
+
+/* Floating Avatar */
+.img-floatinganim {
+  animation-name: floating; 
+  animation-duration: 3s; 
+  animation-iteration-count: infinite; 
+  animation-timing-function: ease-in-out;
+} 
+  
+@keyframes floating { 
+  0% { 
+    transform: translate(0,  0px); 
+  } 
+  
+  50% { 
+    transform: translate(0, 15px); 
+  } 
+  
+  100% {
+    transform: translate(0, -0px); 
+  } 
+}
+
+/* Word Gradient */
+.text-gradient {
+  color: #7319fa;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Sitemap Links */
+.sitemaplink {
+  font-size: 1.4em;
+  line-height: 1em;
+}
+
+.sitemap {
+  text-align: center;
+}
+
+/* TAROT ELEMENTS */
+.card1, 
+.card2, 
+.card3 {
+  box-shadow: 2px 3px 3px 0 rgba(0,0,0,0.1);
+  border-radius: 13px;
+  margin: 0 5px;
+}
+
+.card1, 
+.card2, 
+.card3, 
+.cardarea {
+  transition: .5s ease;
+}
+
+/* For wide oracle cards */
+.card1 {
+  width: 175px;
+  height: 230px;
+}
+
+/* For medium tarot cards */
+.card2 {
+  width: 160px;
+  height: 230px;
+}
+
+/* For tarot cards */
+.card3 {
+  width: 155px;
+  height: 230px;
+}
+
+.circle {
+  width:175px;
+  box-shadow: 2px 3px 3px 0 rgba(0,0,0,0.1);
+  border-radius: 93px;
+  margin: 0 5px;
+}
+
+.cardarea:hover img {
+  opacity: 0.7;
+}
+
+/* Footnotes (Defaults Page) */
+table a[href^="#"] {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+table a[href^="#"]:hover {
+  text-decoration: underline;
+}
+
+.mobilecenter {
+  margin-top: 1em;
+}
+
+/* -------------------------------------------------------- */
+/* TABS (MEDIA LOG) */
+/* -------------------------------------------------------- */
+
+ /* Style the tab */
+ .tab {
+  overflow: hidden;
+  padding: 10px 2px 0px 2px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px 0px;
+  margin-bottom: 1em;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: transparent;
+  font-family: Summer;
+  float: left;
+  border-radius: 9px;
+  outline: none;
+  cursor: url("/cursors/star.png"), pointer; 
+  padding: 8px 10px 0px 10px;
+  transition: 0.3s;
+  margin-right: 2px;
+  margin-left: 2px;
+  box-shadow:inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px grey,inset 2px 2px #dfdfdf;
+}
+
+.tab button:not(:disabled):active {
+  box-shadow:inset -1px -1px #fff,inset 1px 1px #0a0a0a,inset -2px -2px #dfdfdf,inset 2px 2px grey;
+}
+
+/* Change background color of buttons on hover/focus */
+.tab button:hover,
+.tab button:focus {
+  background-color: var(--header-background-color);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: var(--accent-color);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: none;
+  border-top: none;
+} 
+
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* MEDIA LOG, LAST UPDATED TEXT */
+p.lastupdate {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* MUSIC PLAYER */
+.musicplayer {
+  margin-top: 0.5em;
+  margin-bottom: -0.5em;
+}
+
+.songtitle {
+  font-family: Summer;
+  padding-top: 8px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 29px;
+}
+
+.controls {
+  font-size: 1.2em !important;
+  text-align: center;
+  width: 100%;
+  height: 25px;
+}
+
+.controls tr:hover {
+  background-color: initial;
+}
+
+i.fas:hover {
+  cursor:pointer;
+}
+
+.controls td {
+  padding: 5px;
+}
+
+.controls td:first-child {
+  text-align: unset;
+}
+
+.medialoglist {
+  text-align: justify;
+  margin-left: -0.8em;
+}
+
+.log {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-top: 1em;
+}
+
+.ll {
+  text-decoration: none;
+}
+
+.ll:hover {
+  text-decoration: underline;
+}
+
+.movie::marker {
+  content: url(/medialog/icons/media-movie.png) " ";
+}
+
+.yt::marker {
+  content: url(/medialog/icons/media-yt.png) " ";
+}
+
+.music::marker {
+  content: url(/medialog/icons/media-music.png) " ";
+}
+
+.show::marker {
+  content: url(/medialog/icons/media-tv.png) " ";
+}
+
+.reading::marker {
+  content: url(/medialog/icons/media-reading.png) " ";
+}
+
+.comic::marker {
+  content: url(/medialog/icons/media-comic.png) " ";
+}
+
+lite-youtube {
+  justify-content: center;
+}
+
+/* -------------------------------------------------------- */
+/* GUESTBOOK IFRAME */
+/* -------------------------------------------------------- */
+
+.wrap-element {
+  position: relative;
+  overflow: hidden;
+  padding-top: 150%;
+}
+
+.wrapped-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* -------------------------------------------------------- */
+/* CHECKLIST (TODO PAGE) */
+/* -------------------------------------------------------- */
+
+.notebook {
+  border-width:  28px;
+  border-style:  solid;
+  width: 72vw;
+  max-width: 350px;
+}
+
+.todolist {
+  max-height: 500px;
+  overflow: auto;
+  width: 54vw;
+  max-width: 300px;
+  height: 34vh;
+}
+
+.todolist > *:first-child {
+  margin-top: 5px;
+} 
+
+.check, 
+.checkoff {
+  line-height: 0.9em;
+  margin-left: 1em;
+}
+
+.checkoff {
+  text-decoration-line: line-through;
+}
+
+.checkoff::before {
+  content: " " url(/imgs/check.gif) " ";
+}
+
+.check::before {
+content: " " url(https://foollovers.com/mat/i-square/c35-icon-square.gif) " ";
+}
+
+/* -------------------------------------------------------- */
+/* ACCESSIBILITY */
+/* -------------------------------------------------------- */
+
+/* please do not remove this. */
+
+#skip-to-content-link {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  line-height: 1;
+  font-size: 1.25rem;
+  background-color: var(--content-background-color);
+  color: var(--text-color);
+  transform: translateY(-3rem);
+  transition: transform 0.1s ease-in;
+  z-index: 99999999999;
+}
+
+#skip-to-content-link:focus,
+#skip-to-content-link:focus-within {
+  transform: translateY(0);
+}
+
+/* ACCESSIBILITY TOGGLES */
+select, 
+.sidebar-section button, 
+.fontselect {
+  font-family: 'Courier New', Courier, monospace;
+  border: 1px solid;
+  border-radius: 3px;
+}
+
+.fontselect {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.sidebar-section button {
+  font-size: 0.8em;
+  margin-bottom: 10px;
+}
+
+/* -------------------------------------------------------- */
+/* MOBILE RESPONSIVE */
+/* -------------------------------------------------------- */
+
+/* CSS Code for devices > 970px */
+@media (min-width: 970px) {
+  .mobileside, 
+  #statusdrop {
+    display: none;
+  }
+}
+
+/* CSS Code for devices < 970px */
+@media (max-width: 970px) {
+  .layout {
+    width: 100%;
+    grid-template: "header" auto  "leftSidebar" auto "rightSidebar" auto "main" auto "footer" auto / 1fr;
+    /* Confused by the grid? Check out my tutorial: https://petrapixel.neocities.org/coding/positioning-tutorial#grid */
+  }
+
+  .deskside {
+    display: none;
+  }
+
+  nav {
+    margin-bottom: 1em;
+  }
+
+  nav > ul li > a,
+  nav > ul li > strong {
+    line-height: 0.7em;
+  }
+
+  /* Navigation and Status Dropdowns */
+  #navdrop, 
+  #statusdrop {
+    border-style: dashed solid;
+    border-color: var(--link-color);
+    border-width: 1px;
+    margin-top: 0;
+    padding: 0.5em 0.5em 0;
+  }
+
+  #navdrop {
+    margin-bottom: 2em;
+  }
+
+  #navdrop summary {
+    margin: 0;
+    padding-top: 0.25em;
+  }
+
+  #navdrop summary::marker, 
+  #statusdrop summary::marker {
+    content: "▸ ";
+  }
+
+  #navdrop[open] summary.sum::marker, 
+  #statusdrop[open] summary::marker {
+    content: "▾ ";
+  }
+
+  #navdrophead, 
+  #statusdrophead {
+    font-weight: bold;
+    font-family: Summer;
+    text-align: center;
+    display: inline;
+  }
+
+  #navdrophead {
+    font-size: 1.6em;
+  }
+
+  #navdrop a, 
+  #navdrop p {
+    text-decoration: none;
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+
+  #navdrop[open] {
+    padding-bottom: 1em;
+  }
+
+  #navdrop * {
+    text-align: center;
+  }
+
+  nav details:not(#navdrop) {
+    font-size: 1em;
+    padding: 0;
+    line-height: 1em;
+  }
+
+  nav details:not(#navdrop) summary {
+    padding-bottom: 0.25em;
+    font-size: 1.15em;
+  }
+
+  nav details:not(#navdrop) summary:hover, 
+nav details:not(#navdrop) summary:active, 
+nav details:not(#navdrop)[open] summary {
+  background-color: var(--sidebar-background-color);
+  font-weight: 700;
+}
+
+nav details:not(#navdrop) ul {
+  padding-inline-start: 0;
+}
+
+  .header-content {
+    padding: 15px;
+  }
+  
+  .header-title {
+    font-family: Summer;
+    font-size: 1.64em;
+    font-weight: bold;
+  }
+
+  nav {
+    padding: 0;
+  }
+
+  nav > ul {
+    padding-top: 0.5em;
+  }
+
+  nav > ul li > a,
+  nav > ul li > details summary,
+  nav > ul li > strong {
+    padding: 0.5em;
+  }
+
+  #statusdrop {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  
+  #statusdrop summary {
+    text-align: center;
+    padding-top: 0.1em;
+  }
+
+  #statusdrop ul {
+    margin-left: 4.25em;
+  }
+
+  #statusdrop ul li, 
+  .sidebar-section ul li {
+    line-height: 1.5em;
+  }
+
+  #statusdrophead {
+    font-size: 1.4em;
+  }
+
+  main {
+    max-height: none;
+    padding: 30px;
+  }
+
+  main h1,
+  main h2,
+  main h3,
+  main h4,
+  main h5,
+  main h6 {
+    text-align: center;
+    display: block;
+  }
+
+  main h1 {
+    line-height: 1.35em;
+  }
+
+  .tabcontent h4, 
+  .mobilecenter {
+    text-align: center;
+  }
+
+  .images {
+    flex-wrap: wrap;
+  }
+
+  .images img {
+    width: 100%;
+  }
+
+  #skip-to-content-link {
+    font-size: 1rem;
+  }
+
+  .flex-container, 
+  #flexindex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar-section ul,
+  .sidebar-section ol {
+   font-size: 1em;
+   text-align: left;
+   line-height: 2.5em;
+  }
+
+  .sidebar-section ul li {
+    line-height: 1.5em;
+  }
+
+  .sidebar-section ul li span.bold {
+    text-decoration: underline;
+  }
+
+  .notes[open] {
+    width: auto;
+  }
+}
+
+@media (not(hover)){
+  .tab button:not(:disabled):hover {
+    box-shadow:inset -1px -1px #fff,inset 1px 1px #0a0a0a,inset -2px -2px #dfdfdf,inset 2px 2px grey;
+  }
+}
+
+/* CSS Code for devices < 770px */
+@media (max-width: 770px) {
+  .ytvid {
+    width: auto;
+  }
+
+  .flexaltar {
+    flex-direction: column;
+  }
+}
+
+/* CSS Code for devices < 740px */
+@media (max-width: 685px) {
+  #flexlog {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* CSS Code for devices < 600px */
+@media (max-width: 600px) {
+  #flexabout {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.4em;
+  }
+}
+
+/* CSS Code for devices < 640px */
+@media (max-width: 640px) {
+  .altar {
+    flex-basis: 90%;
+  }
+}
+
+/* CSS Code for devices < 600px */
+@media (max-width: 600px) {
+  .flexcontainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .medialogimg {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .medialoglist {
+    text-align: justify;
+  }
+}
+
+/* CSS Code for devices < 575px */
+@media (max-width: 575px) {
+  #statusdrop ul {
+    margin-left: -1.25em;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* -------------------------------------------------------- */
+/* WIDGETS */
+/* -------------------------------------------------------- */
+
+lastfm-tracks {
+  box-sizing: border-box;
+  border: 1px solid #C1C8D7;
+  width: 270px;
+  height: 411px;
+  border-radius: 0px 0px 15px 15px;
+}
+
+/* -------------------------------------------------------- */
+/* TIPPY CUSTOMIZATION */
+/* -------------------------------------------------------- */
+
+.tippy-box[data-theme~='star'] {
+  background-color: var(--tippy-background-color);
+  color: var(--text-color);
+}
+
+.tippy-box[data-theme~='star'][data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: var(--tippy-background-color);
+}
+.tippy-box[data-theme~='star'][data-placement^='bottom'] > .tippy-arrow::before {
+  border-bottom-color: var(--tippy-background-color);
+}
+.tippy-box[data-theme~='star'][data-placement^='left'] > .tippy-arrow::before {
+  border-left-color: var(--tippy-background-color);
+}
+.tippy-box[data-theme~='star'][data-placement^='right'] > .tippy-arrow::before {
+  border-right-color: var(--tippy-background-color);
+}
+
+/* -------------------------------------------------------- */
+/* STICKY BUTTONS */
+/* -------------------------------------------------------- */
+
+/* Disable Animation Button */
+.myBtn {
+  position: sticky;
+  top: 2em;
+  float: right;
+  margin-top: -3.15em;
+  margin-right: 1.5em;
+  max-width: 100px;
+  font-size: 1.1em;
+  padding: 3px;
+  border-radius: 7px;
+  text-align: center;
+  text-decoration: none;
+  z-index: 2;
+}
+
+/* Back-To-Top Button */
+.bttBtn {
+  position: sticky;
+  top: 2em;
+  float: right;
+  margin-top: 0.5em;
+  margin-right: 2em;
+  max-width: 160px;
+  font-size: 1.1em;
+  padding: 3px 6px;
+  border-radius: 7px;
+  text-align: center;
+  text-decoration: none;
+  z-index: 2;
+}
+
+/* -------------------------------------------------------- */
+/* TESTING */
+/* -------------------------------------------------------- */
+
+    
+
+/* -------------------------------------------------------- */
+/* VINYL COLLECTION PAGE */
+/* -------------------------------------------------------- */
+
+.frame {
+  width:265px;
+  height:265px;
+  background-color:transparent;
+  z-index:999;
+  }
+  
+  .cover {
+  width:265px;
+  height:265px;
+  background-image:url("https://scripteds.neocities.org/placeholder.jpg");
+  background-position:center;
+  position:absolute;
+  z-index:998;
+  top: calc(-1 * var(--sw));
+    right: calc(-1 * var(--sw));
+  perspective: 1000px;
+  transform-origin: left;
+    transform-style: preserve-3d;
+      transform:translateX(13em);
+  animation:backflip 1.7s cubic-bezier(.75,.03,.4,.97);
+  animation-fill-mode:forwards;
+  }
+  
+  @keyframes backflip {
+    100% {
+      transform: rotateY(0) translateX(0) skewY(0);
+    }
+  
+    50% {
+      transform: rotateY(-90deg) translateX(0em) skewY(-20deg);
+    }
+  
+    0% {
+      transform: rotateY(-180deg) translateX(0em) skewY(0);
+    }
+  }
+  
+  .frame:hover .cover {
+  animation:flip 1.7s cubic-bezier(.75,.03,.4,.97);
+  animation-fill-mode:forwards;
+  }
+  
+  @keyframes flip {
+    0% {
+      transform: rotateY(0) translateX(0) skewY(0);
+    }
+  
+    50% {
+      transform: rotateY(-90deg) translateX(0em) skewY(-20deg);
+    }
+  
+    100% {
+      transform: rotateY(-180deg) translateX(0em) skewY(0);
+    }
+  }
+  
+  .inside {
+  width: 265px;
+  height: 265px;
+  padding: 20px;
+  padding-top: 30px;
+  background-color:var(--box-background-color);
+  overflow:auto;
+  box-sizing: border-box;
+  }
+  
+  .inside p,
+  .inside cite {
+  margin: 0 .5em;
+  margin-left:1em;
+  }
+
+  .inside p:last-child {
+    margin-top: 15px;
+  }
+
+  .albumname {
+    font-size: 1.2em;
+    font-weight: 700;
+  }

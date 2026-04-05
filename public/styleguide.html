@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>style guide</title>
+    <meta content="My design guide for the island." name="description">
+
+    <meta property="og:image" content="./starrynight-wp.gif">
+    <meta property="og:description" content="My personal space on the web. ♡">
+    <meta property="og:title" content="mauvemystic's dream island">
+
+    <link href="./favicon(5).ico" rel="icon" type="image/x-icon">
+
+    <!-- CSS: -->
+    <link id="font" href="fonts.css" rel="stylesheet">
+    <link href="./style/style.css" rel="stylesheet">
+    <link href="./style/styleguide.css" rel="stylesheet">
+    <link id="colortheme" href="./style/light.css" rel="stylesheet">
+    
+    <!-- JavaScript: -->
+    <script src="/script/layout.js"></script>
+    <script src="https://status.cafe/current-status.js?name=babycloudcakes" defer></script>
+    <script src="/script/lastfm.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+
+
+    <script>
+      // Template generated with petrapixel's layout generator.
+      // (Please do not remove this credit.)
+      console.log("%c Template generated with petrapixel's layout generator.", "font-size: 14pt;");
+      console.log("%c https://petrapixel.neocities.org/coding/layout-generator", "font-size: 14pt;");
+    </script>
+  </head>
+  <body>
+    <!-- The next line is a skip-to-content link for keyboard users. Do not remove it! -->
+    <a href="#content" id="skip-to-content-link">Skip to content</a>
+
+    <div class="layout">
+      
+      <!-- =============================================== -->
+      <!-- Header (and Sidebars) will be loaded per JavaScript! Edit layout.js to change. -->
+      <!-- =============================================== -->
+
+      <main id="content"> <!-- Do NOT remove the ID here -->
+
+        <noscript>Please enable JavaScript to view this website! The sidebar uses JS to display the navigation on all pages, so it is easy to update when I make more pages. Please use the <a href="./sitemap">sitemap</a> to navigate if you have JS disabled!</noscript>
+
+        <!-- =============================================== -->
+        <!-- MAIN CONTENT -->
+        <!-- =============================================== -->
+
+        <section>
+          <h1 id="top">STYLE GUIDE</h1>
+          <p class="info">A guide that shows my theme color palettes, heading styles, how different HTML elements are styled, and other site-wide design elements. Heavily inspired by <a href="https://shellsharks.com" target="_blank" rel="external">ShellSharks</a>🙂</p>
+
+          <h2>TABLE OF CONTENTS</h2>
+          <ol>
+            <li><a href="#cp">Color Palettes</a></li>
+            <li><a href="#h">Headings</a></li>
+            <li><a href="#ghe">General HTML Elements</a></li>
+            <li><a href="#oswde">Other Site-Wide Design Elements</a></li>
+            <li><a href="#nydod">Not Yet Defined or Described</a></li>
+          </ol>
+
+          <h2 id="cp" class="stylehead">COLOR PALETTES</h2>
+          <p style="text-align: justify;">Click the color to copy its HEX code.</p>
+          <script>
+            function copyToClipboard(element) {
+              var $temp = $("<input>");
+              $("body").append($temp);
+              $temp.val($(element).text()).select();
+              document.execCommand("copy");
+              $temp.remove();
+            }
+          </script>
+          <div class="flexstyle">
+            <div>
+              <h3>Light Theme</h3>
+              <div style="color:#f9f5ff">&nbsp;&nbsp;Content Background
+                <button id="content-bg" class="cbox content-bg" onclick="copyToClipboard('#content-bg')">f9f5ff</button>
+              </div>
+
+              <div style="color:#e6e9ef;">&nbsp;&nbsp;Sidebar Background
+                <button id="sidebar-bg" class="cbox sidebar-bg" onclick="copyToClipboard('#sidebar-bg')">e6e9ef</button>
+              </div>
+
+              <div style="color:#C4B5CF;">&nbsp;&nbsp;Header Background
+                <button id="header-bg" class="cbox header-bg" onclick="copyToClipboard('#header-bg')">C4B5CF</button>
+              </div>
+              
+              <div style="color:#EBE7EF;">&nbsp;&nbsp;Box Background
+                <button id="box-bg" class="cbox box-bg" onclick="copyToClipboard('#box-bg')">EBE7EF</button>
+              </div>
+
+              <div style="color:#D8CEDF;">&nbsp;&nbsp;Tippy Background
+                <button id="tippy-bg" class="cbox tippy-bg" onclick="copyToClipboard('#tippy-bg')">D8CEDF</button>
+              </div>
+
+              <div style="color:#000000;">&nbsp;&nbsp;Text
+                <button id="text" class="cbox text" onclick="copyToClipboard('#text')">000000</button>
+              </div>
+
+              <div style="color:#525f93;">&nbsp;&nbsp;Accent
+                <button id="accent-c" class="cbox accent-c" onclick="copyToClipboard('#accent-c')">525f93</button>
+              </div>
+
+              <div style="color:#000;">&nbsp;&nbsp;Sidebar Text
+                <button id="sidebartext" class="cbox sidebartext" onclick="copyToClipboard('#sidebartext')">C4B5CF</button>
+              </div>
+
+              <div style="color:#625275;">&nbsp;&nbsp;Link Text
+                <button id="link" class="cbox link" onclick="copyToClipboard('#link')">625275</button>
+              </div>
+
+              <div style="color:#485870;">&nbsp;&nbsp;Link Hover
+                <button id="linkhover" class="cbox linkhover" onclick="copyToClipboard('#linkhover')">485870</button>
+              </div>
+
+              <div style="color:#dad7f8;">&nbsp;&nbsp;Link Hover Background
+                <button id="linkhover-bg" class="cbox linkhover-bg" onclick="copyToClipboard('#linkhover-bg')">dad7f8</button>
+              </div>
+
+              <div style="color:#C1C8D7;">&nbsp;&nbsp;Link Hover Button
+                <button id="linkhover-button" class="cbox linkhover-button" onclick="copyToClipboard('#linkhover-button')">C1C8D7</button>
+              </div>
+
+              <div style="color:#a99bb9;">&nbsp;&nbsp;Border
+                <button id="border" class="cbox border" onclick="copyToClipboard('#border')">a99bb9</button>
+              </div>
+
+            </div> <!-- end of light theme color boxes -->
+
+            <div>
+              <h3>Dark Theme</h3>
+              <div style="color:#3c4c5f">&nbsp;&nbsp;Content Background
+                <button id="content-bgd" class="cbox content-bgd" onclick="copyToClipboard('#content-bgd')">3c4c5f</button>
+              </div>
+
+              <div style="color:#637381;">&nbsp;&nbsp;Sidebar Background
+                <button id="sidebar-bgd" class="cbox sidebar-bgd" onclick="copyToClipboard('#sidebar-bgd')">637381</button>
+              </div>
+
+              <div style="color:#b59fc24a;">&nbsp;&nbsp;Header Background
+                <button id="header-bgd" class="cbox header-bgd" onclick="copyToClipboard('#header-bgd')">b59fc24a</button>
+              </div>
+              
+              <div style="color:#645665;">&nbsp;&nbsp;Box Background
+                <button id="box-bgd" class="cbox box-bgd" onclick="copyToClipboard('#box-bgd')">645665</button>
+              </div>
+
+              <div style="color:#645665;">&nbsp;&nbsp;Tippy Background
+                <button id="tippy-bgd" class="cbox tippy-bgd" onclick="copyToClipboard('#tippy-bgd')">645665</button>
+              </div>
+
+              <div style="color:#fbfbf2;">&nbsp;&nbsp;Text
+                <button id="textd" class="cbox textd" onclick="copyToClipboard('#textd')">fbfbf2</button>
+              </div>
+
+              <div style="color:#e5fafe;">&nbsp;&nbsp;Accent
+                <button id="accent-cd" class="cbox accent-cd" onclick="copyToClipboard('#accent-cd')">e5fafe</button>
+              </div>
+
+              <div style="color:#fff;">&nbsp;&nbsp;Sidebar Text
+                <button id="sidebartextd" class="cbox sidebartextd" onclick="copyToClipboard('#sidebartextd')">fff</button>
+              </div>
+
+              <div style="color:#F0FCFE;">&nbsp;&nbsp;Link Text
+                <button id="linkd" class="cbox linkd" onclick="copyToClipboard('#linkd')">F0FCFE</button>
+              </div>
+
+              <div style="color:#fff;">&nbsp;&nbsp;Link Hover
+                <button id="linkhoverd" class="cbox linkhoverd" onclick="copyToClipboard('#linkhoverd')">fff</button>
+              </div>
+
+              <div style="color:#71535a;">&nbsp;&nbsp;Link Hover Background
+                <button id="linkhover-bgd" class="cbox linkhover-bgd" onclick="copyToClipboard('#linkhover-bgd')">71535a</button>
+              </div>
+
+              <div style="color:#516781;">&nbsp;&nbsp;Link Hover Button
+                <button id="linkhover-buttond" class="cbox linkhover-buttond" onclick="copyToClipboard('#linkhover-buttond')">516781</button>
+              </div>
+
+              <div style="color:#beadbf;">&nbsp;&nbsp;Border
+                <button id="borderd" class="cbox borderd" onclick="copyToClipboard('#borderd')">beadbf</button>
+              </div>
+            </div> <!-- end of dark theme color boxes -->
+          </div> <!-- end of color palette flexbox -->
+          <p class="bttBtn"><a href="#top">Back to the top! ↥</a></p>
+
+          <h2 id="f" class="stylehead">FONTS</h2>
+          <div class="mobilecenter">
+            <h3 style="font-family: Summer;">Display: Summer</h3>
+            <span style="font-family: Summer;">Used for headings and larger text.</span>
+            <h3 style="font-family: RainyHearts;">Base: RainyHearts</h3>
+            Used for body text.
+            <h3 style="font-family: Trebuchet MS;">Other: Trebuchet MS</h3>
+            <span style="font-family: Trebuchet MS;">Used for font toggle (for accessibility).</span>
+          </div>
+
+          <h2 id="h" class="stylehead">HEADINGS</h2>
+          <p>The standard headings for my site. Any customized headings are listed in the <a href="#otherelements">other site-wide design elements section</a>.</p>
+          <h1>H1 Header</h1>
+          <p>H1 Header. Lorem ipsum odor amet, consectetuer adipiscing elit. Molestie at facilisis ultricies taciti dolor magna odio finibus. Ultricies mauris leo elementum porttitor curabitur eu. Proin integer iaculis malesuada placerat suspendisse euismod lectus. Rhoncus bibendum fames netus fringilla dictum bibendum integer penatibus efficitur. Sapien posuere venenatis nibh vivamus convallis interdum vulputate nullam.</p>
+          <h2>H2 Header</h2>
+          <p>H2 Header. Lorem ipsum odor amet, consectetuer adipiscing elit. Molestie at facilisis ultricies taciti dolor magna odio finibus. Ultricies mauris leo elementum porttitor curabitur eu. Proin integer iaculis malesuada placerat suspendisse euismod lectus. Rhoncus bibendum fames netus fringilla dictum bibendum integer penatibus efficitur. Sapien posuere venenatis nibh vivamus convallis interdum vulputate nullam.</p>
+          <h3>H3 Header</h3>
+          <p>H3 Header. Lorem ipsum odor amet, consectetuer adipiscing elit. Molestie at facilisis ultricies taciti dolor magna odio finibus. Ultricies mauris leo elementum porttitor curabitur eu. Proin integer iaculis malesuada placerat suspendisse euismod lectus. Rhoncus bibendum fames netus fringilla dictum bibendum integer penatibus efficitur. Sapien posuere venenatis nibh vivamus convallis interdum vulputate nullam.</p>
+          <h4>H4 Header</h4>
+          <p>H4 Header. Lorem ipsum odor amet, consectetuer adipiscing elit. Molestie at facilisis ultricies taciti dolor magna odio finibus. Ultricies mauris leo elementum porttitor curabitur eu. Proin integer iaculis malesuada placerat suspendisse euismod lectus. Rhoncus bibendum fames netus fringilla dictum bibendum integer penatibus efficitur. Sapien posuere venenatis nibh vivamus convallis interdum vulputate nullam.</p>
+          <h5>H5 Header</h5>
+          <p>H5 Header. Lorem ipsum odor amet, consectetuer adipiscing elit. Molestie at facilisis ultricies taciti dolor magna odio finibus. Ultricies mauris leo elementum porttitor curabitur eu. Proin integer iaculis malesuada placerat suspendisse euismod lectus. Rhoncus bibendum fames netus fringilla dictum bibendum integer penatibus efficitur. Sapien posuere venenatis nibh vivamus convallis interdum vulputate nullam.</p>
+          <h6>H6 Header</h6>
+          <p>H6 Header. Lorem ipsum odor amet, consectetuer adipiscing elit. Molestie at facilisis ultricies taciti dolor magna odio finibus. Ultricies mauris leo elementum porttitor curabitur eu. Proin integer iaculis malesuada placerat suspendisse euismod lectus. Rhoncus bibendum fames netus fringilla dictum bibendum integer penatibus efficitur. Sapien posuere venenatis nibh vivamus convallis interdum vulputate nullam.</p>
+
+          <h2 id="ghe" class="stylehead">GENERAL HTML ELEMENTS</h2>
+          <p><span class="bold accent">Horizontal Rule</span> &lt;hr&gt;:<hr></p>
+          <p><span class="bold accent">Hyperlink</span> &lt;a&gt;: This is an internal link to <a href="/">Mauvemystic's Dream Island</a>. This is an <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=0gcJCdgAo7VqN5tD" target="_blank" rel="external">external link</a>.</p>
+          <p><span class="bold accent">aside</span> &lt;aside&gt;: <aside>This is an aside. Primarly used for my right sidebar.</aside></p>
+          <p><span class="bold accent">bold</span> &lt;span class="bold"&gt;: Welcome to my <span class="bold">island</span>!</p>
+          <p><span class="bold accent">blockquote</span> &lt;blockquote&gt;: <blockquote>This is a blockquote.</blockquote></p>
+          <p><span class="bold accent">br</span> &lt;br&gt;:<br>This is me typing a sentence, and then<br>here's a line break.</p>
+          <p><span class="bold accent">button</span> &lt;button&gt;: <button>click me</button></p>
+          <p><span class="bold accent">cite</span> &lt;cite&gt;: <cite>by mauvemystic</cite></p>
+          <p><span class="bold accent">code</span> &lt;code&gt;: Here is some inline code ↠ <code>Print("Welcome to my island");</code></p>
+          <p><span class="bold accent ">details</span> &lt;details&gt;: <details style="margin-top: 0;"><summary>Summary</summary>This is what you see when you use the toggle dropdown.</details></p>
+          <p><span class="bold accent">footer</span> &lt;footer&gt;: <footer>This is a footer. Solely used at the bottom of all pages.</footer></p>
+          <p><span class="bold accent">header</span> &lt;header&gt;: <header>This is a header. Solely used at the very top of most pages.</header></p>
+          <p><span class="bold accent">unordered list</span> &lt;ul&gt;:<br><ul><li>list item 1</li><li>list item 2</li><li>list  item 3</li></ul></p>
+          <p><span class="bold accent">ordered list</span> &lt;ol&gt;:<br><ol><li>list item 1</li><li>list item 2</li><li>list  item 3</li></ol></p>
+          <p><span class="bold accent">main</span> &lt;main&gt;: <main>This is a main section. Solely used as a container for the page's main info.</main></p>
+          <p><span class="bold accent">mark</span> &lt;mark&gt;: <mark>marked text</mark></p>
+          <p><span class="bold accent">quote</span> &lt;q&gt;: <q>Why did the chicken cross the road? To get to the other side!</q></p>
+          <p><span class="bold accent">striked text</span> &lt;s&gt;: whoops, <s>scratch that</s>!</p>
+          <p><span class="bold accent">sample output</span> &lt;samp&gt;: example ↠ <samp>here's the output</samp></p>
+          <p><span class="bold accent">small</span> &lt;small&gt;: <small>here's some small text</small></p>
+          <p><span class="bold accent">subscript</span> &lt;sub&gt;: here's a subscript <sub>here</sub></p>
+          <p><span class="bold accent">summary</span> &lt;summary&gt;: <summary>This is a summary. Can be used as a summary, caption, or legend.</summary></p>
+          <p><span class="bold accent">superscript</span> &lt;sup&gt;: here's a superscript <sup>here</sup></p>
+          <p><span class="bold accent">table</span> &lt;table&gt;, &lt;td&gt;, &lt;tr&gt;, &lt;th&gt;:<table><th>Name</th><th>Favorite Color</th></tr><tr><td>mauvemystic</td><td>purple</td></tr></table></p>
+          <p><span class="bold accent">underline</span> &lt;u&gt;: <u>underlined</u> word</p>
+
+          <h2 id="oswde" class="stylehead">OTHER SITE-WIDE DESIGN ELEMENTS</h2>
+          <h3 class="accent">Crossbullets class (list)</h3>
+          <ul class="crossbullets"><li>List item 1</li><li>List item 2</li><li>List item 3</li></ul>
+          <h3 class="accent">Heartbullets class (list)</h3>
+          <ul class="heartbullets"><li>List item 1</li><li>List item 2</li><li>List item 3</li></ul>
+          <h3 class="accent">Info class</h3>
+          <div class="info">This is an info area.</div>
+          <h3 class="accent">Linkbutton class</h3>
+          <p><a href="" class="linkbutton">This is a link button</a></p>
+          <h3 class="accent">Minitapebox class</h3>
+          <div class="minitapebox" style="margin-top: 1em; margin-bottom: 0em;">
+            <h2 class="minitapeheader">Minitape Header</h2>
+            <p>This is a minitapebox. I like to also use these to make sections on a page and make certain info stand out.</p>
+          </div>
+          <h3 class="accent">Resourcelink class (p)</h3>
+          <p class="resourcelink">This is the resourcelink class. I like to use this to create "lists" without the html list element.</p>
+          <h3 class="accent">Sidebar-title class</h3>
+          <div class="sidebar-title">Sidebar Title</div>
+          <h3 class="accent">Sidebar blockquote</h3>
+          <div class="sidebar-section">
+            <blockquote style="margin-top: 0;">This is a section.</blockquote>
+            <h3 class="accent">Sidebar unordered list</h3>
+            <ul><li>List item 1</li><li>List item 2</li><li>List item 3</li></ul>
+          </div>
+          <h3 class="accent">Starbullets class (list)</h3>
+          <ul class="starbullets"><li>List item 1</li><li>List item 2</li><li>List item 3</li></ul>
+          <h3 class="accent">Stylehead class (heading)</h3>
+          <h2 class="stylehead" style="margin: 0;">H2 Header w/ Background</h2>
+          <h3 class="accent">Tab class</h3>
+          <div class="tab" style="margin-top: 1em;">
+            <button class="tablinks" onclick="openMedia(event, '1')">Tablink 1</button><button class="tablinks" onclick="openMedia(event, '2')">Tablink 2</button><button class="tablinks" onclick="openMedia(event, '3')">Tablink 3</button><button class="tablinks" onclick="openMedia(event, '4')">Tablink 4</button><button class="tablinks" onclick="openMedia(event, '5')">Tablink 5</button>
+          </div>
+          <div id="1" class="tabcontent">This is tab content for Tablink 1. JavaScript used.</div><div id="2" class="tabcontent">This is tab content for Tablink 2. JavaScript used.</div><div id="3" class="tabcontent">This is tab content for Tablink 3. JavaScript used.</div><div id="4" class="tabcontent">This is tab content for Tablink 4. JavaScript used.</div><div id="5" class="tabcontent">This is tab content for Tablink 5. JavaScript used.</div>
+          <h3 class="accent">Tapebox class</h3>
+          <div class="tapebox" style="margin-top: 1.5em;">
+            <h2 class="tapeheader">Tape Header</h2>
+            <p>This is a tapebox. I like to use these to make sections on a page and make certain info stand out.</p>
+          </div>
+
+          <h2 id="nydod" class="stylehead">NOT YET DEFINED OR DESCRIBED</h2>
+          <p>HTML tags that aren't defined within my site or not described in this guide.</p>
+          <p><span class="bold">Not described:</span><br>img, nav, p, pre, section</p>
+          <p><span class="bold">Not defined:</span><br>
+          address, area, article, audio, base, bdi, bdo, caption, canvas, colgroup, datalist, dd, del, dfn, dialog, div, dl, dt, embed, fieldset, figcaption, figure, form, head, hgroup, html, iframe, img, input, kbd, label, legend, link, map, meta, meter, noscript, object, optgroup, option, output, param, picture, pre, progress, rp, rt, ruby, script, search, select, source, span, style, svg, tbody, template, textarea, tfoot, thead, title, track, var, video, wbr</p>
+        </section>
+
+      </main>
+      
+      <!-- =============================================== -->
+      <!-- Footer will be loaded per JavaScript! Edit layout.js to change. -->
+      <!-- =============================================== -->
+
+    <!-- Closing .layout: -->
+    </div>
+
+    <!-- Add any additional Javascript code (<script></script>) here. -->
+     <!-- TABS SCRIPTS -->
+     <script>
+      function openMedia(evt, mediaName) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
+
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById(mediaName).style.display = "block";
+      evt.currentTarget.className += " active";
+      }
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+  
+  
+      <!--collapsible
+  
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("activetab");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

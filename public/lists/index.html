@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>my home of lists</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link id="colortheme" href="./light.css" rel="stylesheet" type="text/css">
+  <link href="./style.css" rel="stylesheet" type="text/css">
+  <link href="/fonts.css" rel="stylesheet" type="text/css">
+  <link href="./dragula.css" rel="stylesheet" type="text/css">
+  
+  <script src="./dragula.js"></script>
+  <script src="./drag.js"></script>
+  </head>
+  <body>
+    <div id="start"></div>
+    <header id="top">
+      <div id="infocontainer">
+        <h1>my home of lists</h1>
+        <img src="../musicplayer/avatar.jpg" alt="" class="header-icon">
+        <p>Jasmine. 30s. Black American. I love a good list.</p> 
+        <small>P.S. If you have Javascript enabled and are using a larger screen (computer or tablet), you can click the handles in the top right corner of each note and drag them around. This serves no real purpose, but it's fun.</small>
+
+        <div class="right">
+          <details><summary>Change view</summary>
+            <label for="fontFamily">Font:</label>
+            <select name="fontFamily" id="fontFamily">
+              <option  value="RainyHearts">my default</option>
+              <option  value="Courier New">Courier New</option>
+              <option value="Trebuchet MS">Trebuchet MS</option>
+            </select>
+            <script src="../font-selector.js"></script><br>
+            <label for="themetoggle">Theme:</label>
+            <button id="themetoggle" name="themetoggle" onclick="darkmode()">dark mode</button>
+            <button name="themetoggle" onclick="lightmode()">light mode</button>
+            <script>
+              // Multiple Theme Switch
+              function lightmode() {
+                document.getElementById('colortheme').setAttribute('href', './light.css');}
+      
+              function darkmode() {
+                document.getElementById('colortheme').setAttribute('href', './dark.css');}
+  
+              function darkmode() {
+                document.getElementById('colortheme').setAttribute('href', './dark.css');
+                localStorage.setItem('theme', 'dark');}
+  
+              function lightmode() {
+                document.getElementById('colortheme').setAttribute('href', './light.css');
+                localStorage.setItem('theme', 'light');}
+  
+              if(localStorage.getItem('theme') == 'dark'){
+                darkmode();}
+              if(localStorage.getItem('theme') == 'light'){
+                lightmode();}
+              // End of Multiple Theme Switch Code
+            </script>
+          </details>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="./">home</a></li>
+          <li><a href="./archive.html">archive</a></li>
+          <li><a href="./credits">credits</a></li>
+          <li><a href="../">main island</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- FIRST COLUMN -->
+      <div class="column">
+
+        <section id="what" class="color1">
+          <header class="listheader">
+            <h2><a href="#what">media <span class="subtitle">(watch list)</span></a></h2>
+            <span class="handle">&#172;</span>
+          </header>
+          <div class="listtext">
+            <p>Shows I've picked up but haven't finished, for one reason or another. I do plan to finish them, hence this list.</p>
+            <ul>
+              <li><span class="bold">Haikyu!!</span> ⤑ on S1 finale</li>
+              <li><span class="bold">Succession</span> ⤑ I've put off watching the finale for some reason</li>
+              <li><span class="bold">Queen Sugar</span> ⤑ on S7</li>
+              <li><span class="bold">Sister Wives</span> ⤑ on S9</li>
+              <li><span class="bold">Bridgerton</span> ⤑ On S2</li> 
+              <li><span class="bold">Blue Exorcist</span> ⤑ on S1</li> 
+              <li><span class="bold"><s>Jujutsu Kaisen</span> ⤑ on S1</s> picked back up, moved to medialog!</li> 
+              <li><span class="bold">Daria</span> (rewatch) ⤑ On S2</li> 
+              <li><span class="bold">Arcane</span> ⤑ on S2</li>  
+            </ul>
+          </div>
+          <footer class="foot">
+            <p>march 28 2026 &infin;</p>
+            <p>march 30 2025 +</p>
+          </footer>
+        </section>
+
+      </div>
+      <!-- END FIRST COLUMN -->
+
+      <!-- SECOND COLUMN -->
+      <div class="column">
+
+        <section id="how" class="color2">
+          <header class="listheader">
+            <h2><a href="#youtubefaves">media <span class="subtitle">(fave youtube channels)</span></a></h2>
+            <span class="handle">&#172;</span>
+          </header>
+          <div class="listtext">
+            <p>This is likely going to become a recommendations page in the end.</p>
+            <ul>
+              <li style="margin-bottom: 1.5em;"><span class="bold"><a href="https://www.youtube.com/@VaporjazzLounge" target="_blank" rel="external">Vaporjazz Lounge:</a></span><img src="youtubers/vaporjazz.jpg" class="listicon" alt=""> This creator makes immersive audio mixes/simulations, and I feel so much nostalgia and relief when I listen to these mixes. Best enjoyed with headphones!</li>
+              <li style="margin-bottom: 1.5em;"><span class="bold"><a href="https://www.youtube.com/@olurinatti" target="_blank" rel="external">Olurinatti:</a></span><img src="youtubers/olurinatti.jpg" class="listicon" alt=""> I only recently found her channel, but she's a lawyer that makes deep-dive videos and intelligent pop culture commentary.</li>
+              <li style="margin-bottom: 1.5em;"><span class="bold"><a href="https://www.youtube.com/@DoWeKnowThem" target="_blank" rel="external">Do We Know Them?:</a></span><img src="youtubers/dwkt.jpg" class="listicon" alt=""> I don't listen to podcasts like I use to but I've been enjoying the DWKT podcast since they popped into my feed a few years ago. It's a drama/commentary podcast, and the hosts' chemistry and humor is pretty great. </li>
+            </ul>
+          </div>
+          <footer class="foot">
+            <p>august 2 2025 &infin;</p>
+            <p>march 30 2025 +</p>
+          </footer>
+        </section>
+
+      </div>
+      <!-- END SECOND COLUMN -->
+
+      <!-- THIRD COLUMN -->
+      <div class="column">
+        <section id="toread" class="color4">
+          <header class="listheader">
+            <h2><a href="#toread">food <span class="subtitle">(fave meals)</span></a></h2>
+            <span class="handle">&#172;</span>
+          </header>
+          <div class="listtext">
+            <ul>
+              <li>Sushi - salmon is my absolute favorite</li>
+              <li>Zuppa Toscana</li>
+              <li>Marinated steak</li>
+              <li>Salads</li>
+              <li>Poke</li>
+              <li>Chicken tortilla soup</li>
+              <li>fresh everything bagels</li>
+            </ul>
+          </div>
+          <footer class="foot">
+            <p>march 28 2026 &infin;</p>
+            <p>march 30 2025 +</p>
+          </footer>
+        </section>
+
+        <section id="music" class="color5">
+          <header class="listheader">
+            <h2><a href="#music">music <span class="subtitle">(albums to get)</span></a></h2> <span class="handle">&#172;</span>
+          </header>
+          <div class="listtext">
+            <ul>
+              <li class="check"><s>"Fancy That" by Pinkpantheress, out on 05/09/25</li>
+              <li class="check">"Let God Sort Em Out" by Clipse, out on 07/11/25</s></li>
+            </ul>
+          </div>
+          <footer class="foot">
+            <p>august 2 2025 &infin;</p>
+            <p>april 11 2025 +</p>
+          </footer>
+        </section>
+
+        <section id="music" class="color3">
+          <header class="listheader">
+            <h2><a href="#music">music <span class="subtitle">(artists I want to see)</span></a></h2> <span class="handle">&#172;</span>
+          </header>
+          <div class="listtext">
+            <ul>
+              <li>Majid Jordan</li>
+              <li>PinkPantheress</li>
+              <li>Samara Cyn</li>
+              <li>Naomi Scott</li>
+              <li>Naomi Sharon</li>
+            </ul>
+          </div>
+          <footer class="foot">
+            <p>april 4 2026 &infin;</p>
+            <p>april 4 2026 +</p>
+          </footer>
+        </section>
+
+        <section id="travel" class="color1">
+          <header class="listheader">
+            <h2><a href="#travel">travel <span class="subtitle">places I dream of visiting</span></a></h2> <span class="handle">&#172;</span>
+          </header>
+          <div class="listtext">
+            <ul>
+              <li>the country of Japan</li>
+              <li>New York City</li>
+              <li>Seattle, Washington</li>
+            </ul>
+          </div>
+          <footer class="foot">
+            <p>april 4 2026 &infin;</p>
+            <p>april 4 2026 +</p>
+          </footer>
+        </section>
+
+      </div>
+      <!-- END THIRD COLUMN -->
+
+    </main>
+
+    <footer id="bottom">
+    <p>c. 2026 | <a href="#start">Back to top!</a></p>
+    </footer>
+  </body>
+</html>

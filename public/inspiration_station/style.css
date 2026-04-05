@@ -1,0 +1,363 @@
+* {
+  margin:0;
+  padding:0;
+  scrollbar-color: var(--scrollcolor) var(--scrollbg);
+  cursor: url(/cursors/tea.png) 0 0, default;
+}
+
+body {
+  background-size: auto 100%;
+  font: 1.15rem var(--bodyfont);
+  color: var(--color);
+  line-height:1.5;
+  background-position: center;
+}
+
+/* Body text styles */
+main ul {
+  list-style-position:outside;
+  margin-left:20px;
+  line-height:1.5;
+}
+
+main ul li::marker {
+  content: url(/imgs/sprout.gif) " ";
+}
+
+main ol {
+  list-style-position:outside;
+  margin-left:20px;
+  line-height:1.5;
+}
+
+p {
+  line-height:1.5;
+  margin:10px 0 10px 0;
+}
+
+a {
+  color: var(--link);
+}
+
+a:hover, a:focus {
+  text-decoration:none;
+}
+
+.fright {
+  float: right;
+}
+
+/* Main header */
+header#top {
+  width: 80%;
+  max-width:1000px;
+  box-shadow: rgba(0,0,0,0.1) -3px 3px 3px;
+  background: var(--header);
+  border: 1px solid var(--headerborder);
+  margin: 25px auto;
+  border-radius: 5px; 
+}
+
+header#top h1 {
+  font-size: 1.5em;
+  margin-bottom: 10px; 
+}
+
+/* Header text */
+#infocontainer {
+  padding:20px;
+  min-height:5.5em;
+}
+
+/* Header icon */
+.header-icon {
+  margin-right: 20px;
+  border-radius: 5px;
+  height: 65px;
+  width: 65px;
+  float:left;
+}
+
+/* Menu */
+nav {
+  margin-top:10px;
+  border-top: 1px solid var(--headerborder); 
+  font-size:1rem;
+}
+
+nav ul {
+  list-style:none;
+  display:inline;
+}
+
+nav ul li {
+  display: inline-block;
+  width:100px;
+  text-align:center;
+  padding: 6px 0;
+  border-left: 1px solid var(--headerborder); 
+}
+
+nav ul li:first-child {
+  border: 0px; 
+}
+
+nav a {
+  text-decoration:none;
+}
+
+nav a:hover {
+  text-decoration:underline;
+}
+
+/* Main content */
+main {
+  margin: 40px 70px 0 70px;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Lists */
+section {
+  margin:20px;
+  box-shadow: rgba(0,0,0,0.1) -3px 3px 3px;
+  border: 1px solid;
+  border-radius: 5px; 
+  padding: 5px 15px 5px 15px;
+}
+
+.columnwide {
+  width: max-content;
+}
+
+/* List colors */
+.color1 {
+  background:var(--color1);
+  border-color:var(--color1border);
+  & .listheader {
+    border-color:var(--color1border);
+  }
+  & .handle {
+    color:var(--color1border);
+  }
+}
+
+.color2 {
+  background:var(--color2);
+  border-color:var(--color2border);
+  & .listheader {
+    border-color:var(--color2border);
+  }
+  & .handle {
+    color:var(--color2border);
+  }
+}
+
+.color3 {
+  background:var(--color3);
+  border-color:var(--color3border);
+  & .listheader {
+    border-color:var(--color3border);
+  }
+  & .handle {
+    color:var(--color3border);
+  }
+}
+
+.color4 {
+  background:var(--color4);
+  border-color:var(--color4border);
+  & .listheader {
+    border-color:var(--color4border);
+  }
+  & .handle {
+    color:var(--color4border);
+  }
+}
+
+.color5 {
+  background:var(--color5);
+  border-color:var(--color5border);
+  & .listheader {
+    border-color:var(--color5border);
+  }
+  & .handle {
+    color:var(--color5border);
+  }
+}
+
+h1 {
+  font-family: Spirit, RainyHearts, 'Courier New', Courier, monospace;
+}
+
+/* List titles */
+header.listheader {
+  display:flex;
+  justify-content: space-between;
+  margin-top: -2px;
+  margin-right: -5px;
+}
+
+h2 {
+  font-size:1.1em;
+  margin-top: 3px;
+}
+
+h2 .subtitle {
+  font-weight:normal;
+}
+
+h2 a {
+  text-decoration:none;
+  color: var(--color);
+}
+
+h2 a:hover {
+  text-decoration:underline;
+}
+
+/* Drag handle */
+.handle {
+  font-size:1rem;
+  cursor:grab;
+  font-weight:bold;
+}
+
+/* List icons */
+.listicon {
+  float: right;
+  margin: 0 0 5px 10px;
+  width:80px;
+  height:80px;
+  border-radius:5px;
+}
+
+.icons {
+  width: 30px;
+  float: left;
+  padding-right: 10px;
+}
+
+/* List content */
+.listtext {
+  overflow: auto;
+  max-height: 300px;
+  padding:10px;
+}
+
+.listimage {
+  margin: -5px;
+  text-align: center;
+}
+
+/* List footers */
+.foot {
+  font-size: 0.9em;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.foot p {
+  margin:0;
+}
+
+/* Main footer */
+footer#bottom {
+  background: var(--header);
+  border: 1px solid var(--headerborder);
+  padding: 5px;
+  font-size:1rem;
+  margin: 25px auto;
+  max-width: 700px;
+  width:70%;
+  box-shadow: rgba(0,0,0,0.1) -3px 3px 3px;
+  text-align: center;
+  border-radius: 5px; 
+}
+
+/* Phone stuff */
+@media screen and (max-width: 899px) {
+  header#top {
+    width:calc(100% - 40px);
+    margin-top:20px;
+  }
+
+  header#top h1 {
+    font-size:1.4em;
+  }
+
+  main {
+    display:inline;
+    margin: auto;
+    width:calc(100% - 40px);
+  }
+
+  .columnwide {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  section {
+    padding: 2em 15px 5px 15px;
+  }
+
+  .listtext {
+    height:auto;
+  }
+
+  .listimage {
+    text-align: center;
+    padding-top: 0;
+    margin-top: -1em;
+  }
+
+  .handle {
+    display:none;
+  }
+    
+  .foot {
+    font-size:0.85em;
+  }
+
+  h2 {
+    font-size:1.2em;
+    margin-top: -1em;
+  }
+
+  .q {
+    margin-top: -2.5em;
+  }
+
+  footer#bottom {
+    width:75%;
+  }
+}
+
+img {
+  max-width: 300px;
+  width: 100%;
+}
+
+cite {
+  display: block;
+  text-align: right;
+}
+
+cite::before {
+  content: "- ";
+}
+
+.right {
+  text-align: right;
+  margin-bottom: -1em;
+}
+
+select, button {
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 5px;
+  padding: 3px;
+}
+summary, label {
+  font-size: 0.8em;
+}

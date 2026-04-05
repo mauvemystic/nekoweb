@@ -1,0 +1,344 @@
+/* -------------------------------------------------------- */
+/* VARIABLES */
+/* -------------------------------------------------------- */
+
+/* Variables are used like this: var(--text-color) */
+:root {
+  /* Background Colors: */
+  --background-color: #3c4c5f;
+  --content-background-color: #7D6C7E;
+  --sidebar-background-color: #637381;
+  --header-background-color: #b59fc24a;
+  --box-background-color: #645665;
+  --tippy-background-color: #645665;
+  --link-background-color-hover: #516781;
+
+  /* Text Colors: */
+  --text-color: #fbfbf2;
+  --accent-color: #e5fafe;
+  --sidebar-text-color: #fff;
+  --link-color: #F0FCFE;
+  --link-color-hover: #fff;
+
+  /* Other Settings: */
+  --border: 1.5px solid #beadbf;
+  --border-color: #beadbf;
+}
+
+/* -------------------------------------------------------- */
+/* HEADER */
+/* -------------------------------------------------------- */
+
+header {
+  background: var(--content-background-color);
+  background-image: url(/gradient.gif);
+  background-size: cover;
+  filter: saturate(30%);
+}
+
+/* -------------------------------------------------------- */
+/* SIDEBARS */
+/* -------------------------------------------------------- */
+
+/* Sidebar Blockquote: */
+
+.sidebar-section blockquote {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.sidebar-section ul li::marker {
+  content: url(/imgs/bullet_light.png) " ";
+}
+
+/* -------------------------------------------------------- */
+/* SCROLLBAR */
+/* -------------------------------------------------------- */
+
+body::-webkit-scrollbar-track,
+.scrollbox::-webkit-scrollbar-track {
+  background-color: #8a8a8b;
+}
+
+/* -------------------------------------------------------- */
+/* CONTENT */
+/* -------------------------------------------------------- */
+
+main blockquote, .clique {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+mark {
+  color: var(--text-color);
+  background: linear-gradient(-100deg, rgba(53, 53, 52, 0.3), rgba(53, 53, 52, 0.7) 95%, rgba(53, 53, 52, 0.1));
+}
+
+a:hover,
+a[rel="external"]:hover {
+  background-color: #71535a;
+}
+
+.alert {
+  border: dashed 1px #fcf0a2;
+}
+
+.minitapebox h2::before,
+.sidebar-title::before, 
+.tapeheader::before {
+  content: " " url(/imgs/lightorb.png) " ";
+}
+
+/* LINK BUTTONS */
+
+.linkbutton:hover {
+  background-color: var(--link-background-color-hover);
+  color: var(--text-color);
+}
+
+/* -------------------------------------------------------- */
+/* BUTTON STYLING */
+/* -------------------------------------------------------- */
+
+button, .myBtn, .bttBtn {
+  background-color: #768eb5;
+  color: #f6f6f7;
+  border: 1px solid;
+}
+
+button:hover, button:focus, .myBtn:hover, .myBtn:focus, .bttBtn:hover, .bttBtn:focus {
+  background-color: #687d9f;
+  color: #f6f6f7;
+}
+
+.myBtn a:hover,
+.bttBtn a:hover {
+  background-color: transparent;
+}
+
+/* -------------------------------------------------------- */
+/* WASHI TAPE BOXES */
+/* -------------------------------------------------------- */
+
+.tapebox, 
+.minitapebox {
+  border: 1px solid #8d808e;
+}
+
+.tapelink {
+  color: var(--link-color-hover);
+}
+
+.tapelink a {
+  color: var(--text-color);
+}
+
+.tapelink a:hover {
+  color: var(--text-color);
+}
+
+/* -------------------------------------------------------- */
+/* TOGGLE DROPDOWNS */
+/* -------------------------------------------------------- */
+
+details {
+  background-color: var(--sidebar-background-color);
+  border-color: #8599aa;
+}
+
+details:hover, 
+nav details:not(#navdrop) summary:hover, 
+nav details:not(#navdrop) summary:active, 
+nav details:not(#navdrop)[open] summary {
+  background-color: #718291;
+}
+
+details[open] {
+  background: #718291;
+}
+
+details summary::marker,
+:is(::-webkit-details-marker) {
+  color: var(--sidebar-text-color);
+}
+
+/* RESOURCES DROPDOWNS */
+
+.resourcelink::before {
+  content: url(/imgs/whitebow.gif) " ";
+}
+
+/* -------------------------------------------------------- */
+/* for resource page jumplinks */
+/* -------------------------------------------------------- */
+
+h2:target {
+  color: var(--sidebar-text-color);
+}
+
+/* -------------------------------------------------------- */
+/* LIST CUSTOMIZATION */
+/* -------------------------------------------------------- */
+
+main ul li::marker, 
+#statusdrop ul li::marker {
+  content: url(/imgs/bullet_light.png) " ";
+}
+
+ul.bullets {
+  list-style-image: url("/imgs/bullet_light.png");
+}
+
+/* LIST-LIKE ITEMS */
+.generallist::before {
+  content: " " url(/imgs/whitebow.gif) " ";
+  }
+
+/* -------------------------------------------------------- */
+/* CONTENT IMAGES */
+/* -------------------------------------------------------- */
+
+.medialogposter, 
+.medialogimg {
+  border-image:  url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAmUlEQVQ4T+2VwQ2AMAhF28VcwCmczClcwMU0HNog5fMbIzc9GeE/gQKtJeGpCcxCocd+XvbH67aEOmhsMA8Q2SQAFyoiFo2Ikd8AtY4sfQ/8gHpAlL7+bnUQykqg7RAaOaG2Q5oe6Q/tvckOqdWY1tQ2MwNPnb43IQjM+jl/orxaRatxevY1WN4/21I6OrZQvEzokn5zM6RAbz3H0BZOe/VMAAAAAElFTkSuQmCC") 7 /  7px / 0 round;
+}
+
+.medialogalbum {
+  border-image:  url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAmUlEQVQ4T+2VwQ2AMAhF28VcwCmczClcwMU0HNog5fMbIzc9GeE/gQKtJeGpCcxCocd+XvbH67aEOmhsMA8Q2SQAFyoiFo2Ikd8AtY4sfQ/8gHpAlL7+bnUQykqg7RAaOaG2Q5oe6Q/tvckOqdWY1tQ2MwNPnb43IQjM+jl/orxaRatxevY1WN4/21I6OrZQvEzokn5zM6RAbz3H0BZOe/VMAAAAAElFTkSuQmCC") 7 /  7px / 0 round;
+}
+
+/* -------------------------------------------------------- */
+/* TABS (MEDIA LOG) */
+/* -------------------------------------------------------- */
+
+ /* Style the tab */
+ .tab {
+  background-color:  var(--box-background-color);
+  border: 1px dashed #fbfbf2;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  color: var(--text-color);
+  background-color: #ffffff15;
+  border: 1px solid #fbfbf2;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  color: #000;
+}
+
+.info {
+  border: 1px dashed #fbfbf2;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* MUSIC PLAYER */
+
+.musicplayer {
+  border: 1px solid #e4e9eb;
+}
+
+.songtitle {
+  border-bottom: 1px solid #e4e9eb;
+  background-color: var(--sidebar-background-color);
+  color: #e4e9eb;
+}
+
+.controls {
+  color: #e4e9eb;
+  background-color: var(--background-color);
+}
+
+/* -------------------------------------------------------- */
+/* MEDIA LOG NOTES */
+/* -------------------------------------------------------- */
+
+.notes {
+  background-color: #7e8790;
+  border-color: #b9c6d2;
+}
+
+.notes:hover {
+  background-color: #929da7;
+}
+
+.notes[open] {
+  background-color: #929da7;
+}
+
+/* -------------------------------------------------------- */
+/* ACCESSIBILITY TOGGLES */
+/* -------------------------------------------------------- */
+
+select {
+  background-color: #768eb5;
+  color: #f6f6f7;
+  border: 1px solid;
+}
+
+/* -------------------------------------------------------- */
+/* MOBILE RESPONSIVE */
+/* -------------------------------------------------------- */
+
+/* CSS Code for devices < 970px */
+@media (max-width: 970px) {
+
+  /* Navigation Dropdown */  
+  #navdrop {
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  #statusdrop {
+    background: rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* -------------------------------------------------------- */
+/* DISABLE ANIMATION BUTTON */
+/* -------------------------------------------------------- */
+
+/* Floating Back-To-Top Button */
+.bttBtn a {
+  text-decoration: none;
+}
+
+.clique a {
+  color: #e8dff0;
+}
+
+.clique a:hover {
+  color: #e8dff0;
+}
+
+.text-gradient {
+  background-image: -webkit-linear-gradient(45deg, #d7b8ff, #e1caff,#EADBFF);
+}
+
+.notebook {
+  border-image:  url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAACM0lEQVR4Xu3dwW7CMBQFURD//8moXcdUjEZ+UQmabu+zHZ/YVkojer/Jn+fz+SObfFX54/G4v5vQ2/CvhoEGOrpDWqGjnLfb6aA0wPB8xrujI2yd31q/5ttnaKDHMzVQeGpphcpD4fQtTwPQ9V79CFjnR2fmmr9s+UCPpIHSFpJ5oBKMyjUoNdg9U65+ppLPyxlKDQI9fhhEj1H3QN9vevJphdKhueQalLY0jX/1M5LmFygJyTxQCUblgZKQzLdBaTwagNpfLaf54u/yNGEagNpfLaf5BirvaKASjMoDJSGZByrBqDxQEpJ5oBKMygMlIZkHKsGoPFASknmgEozKAyUhmQcqwag8UBKSeaASjMq3QdcOaMA1/7a/MQVqVwDUBxrosMBwd3qFUoP1+qie8uH5nt4dzeflTyDUINDebRpdtbTgWqGSW4PSlqbxv+25kzzwdUbqIFB5hgb6fsm05WlLyXwblMajAaj91XKab6/iyDsaqASj8kBJSOaBSjAqD5SEZB6oBKPyQElI5oFKMCoPlIRkHqgEo/JASUjmgUowKg+UhGQeqASj8kBJSObboGsHcnz8sj3b33/XBzp8BwINdFhguDu9QqnBen1UT/nwfE/vjubTmyPyFgQqwag8UBKSuQalM5LG792m46s6298fGmigtOkOeVtecXHxNigNQQNQ+0/L6bMLeh+077Ff7migw0s80G8HHZ7fx3dHj4nb/7ri4wWGLzDQQIcFhrujFfoLtHwN6eOyZ0wAAAAASUVORK5CYII=") 28 /  28px / 0 round;
+} 
+
+a[rel="external"] {
+  background: url(/imgs/externalwhite.png) no-repeat;
+  background-origin: padding-box;
+  padding-right: 1.1em;
+  background-size: 0.75em;
+  background-position-y: calc(100% - 0.1em);
+  background-position-x: calc(100% - 0.3em);
+}
+
+th {
+  background-color: var(--header-background-color);
+}
+
+tr:nth-child(even){background-color: #ebe7ef25;}
+
+tr:hover:not(:first-child) {background-color: #ebe7ef45;}
+
+nav details:not(#navdrop) ul li.new::marker {
+  content:url(/imgs/newwhite.gif);
+}
+
+nav details:not(#navdrop) ul li.update::marker {
+  content:url(/imgs/updatewhite.gif);
+}

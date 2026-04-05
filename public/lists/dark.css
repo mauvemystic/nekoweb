@@ -1,0 +1,48 @@
+:root {
+  /* Page background */
+  --background: #4a517a;
+    
+  /* Universal text and link colors */
+  --color: #fff;
+  --link: #FAFAFA;
+    
+  /* Font family (can include fallbacks) */
+  --bodyfont: RainyHearts, sans-serif;
+
+  /* List background colors */
+  --color1: #42503F;
+  --color2: #404B70;
+  --color3: #745B32;
+  --color4: #4F4A5B;
+  --color5: #43656B;
+    
+  /* Borders for each background color */
+  --color1border: #697466;
+  --color2border: #67708E;
+  --color3border: #B0A38C;
+  --color4border: #8C8994;
+  --color5border: #778F94;
+    
+  /* Header background and border */
+  --header: #614450;
+  --headerborder: #826B74;
+    
+  /* Scrollbars */
+  --scrollbg: #e4e4e400;
+  --scrollcolor: #dabfe2;
+}
+
+body {
+  background: url(./gardendark.webp);
+  background-position: center;
+}
+
+button, select {
+  background-color: #696f84;
+  border: 1px solid #ffffff6d;
+  color: var(--color);
+}
+
+button:hover, button:focus, select:hover, select:focus {
+  background-color: #545869;
+}

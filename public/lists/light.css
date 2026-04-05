@@ -1,0 +1,47 @@
+:root {
+  /* Page background */
+  --background: #4a517a;
+    
+  /* Universal text and link colors */
+  --color: #000000;
+   --link: #4b424e;
+    
+  /* Font family (can include fallbacks) */
+  --bodyfont: RainyHearts, sans-serif;
+
+  /* List background colors */
+  --color1: #e5e7c7;
+  --color2: #c3cbd1;
+  --color3: #e1c9a7;
+  --color4: #e1dbdf;
+  --color5: #bde4e1;
+    
+  /* Borders for each background color */
+  --color1border: #b7b89f;
+  --color2border: #97a5af;
+  --color3border: #d3ae7c;
+  --color4border: #cbc1c8;
+  --color5border: #7acac3;
+    
+  /* Header background and border */
+  --header: #d3b6c3;
+  --headerborder: #bd92a5;
+    
+  /* Scrollbars */
+  --scrollbg: #e4e4e400;
+  --scrollcolor: #73737358;
+}
+
+body {
+  background: url(./gardenlight.webp);
+  background-position: center;
+}
+
+button, select {
+  background-color: #fff;
+  border: 1px solid #00000095;
+}
+
+button:hover, button:focus, select:hover, select:focus {
+  background-color: #e5e5e5;
+}

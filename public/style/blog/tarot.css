@@ -1,0 +1,62 @@
+.cardlayout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 3em 0 0 0;
+  gap: 1.5em 1.5em;
+}
+
+.card, 
+.mcard, 
+.wcard {
+  box-shadow: 2px 3px 3px 0 rgba(0,0,0,0.1);
+  border-radius: 13px;
+  margin: 0 5px;
+}
+
+.card {
+  width:155px;
+  height:230px;
+}
+
+.mcard {
+  width:160px;
+  height:230px;
+}
+
+.wcard {
+  width:175px;
+  height:230px;
+}
+
+.circle {
+  width:175px;
+  box-shadow: 2px 3px 3px 0 rgba(0,0,0,0.1);
+  border-radius: 93px;
+  margin: 0 5px;
+}
+
+.question, 
+.cardname {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.question {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.cardname {
+  color: var(--link-color);
+  margin-bottom: -0.75em;
+}
+
+.space {
+  margin-bottom: 2.5em;
+}
+
+q {
+  font-style: italic;
+}

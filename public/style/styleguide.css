@@ -1,0 +1,170 @@
+/* Style Guide Elements */
+.cbox {
+  float: left;
+  height: 24px;
+  width: 40px;
+  border: 0.5px solid var(--text-color);
+  clear: both;
+  font-size: 0.5em;
+  text-align: center;
+  position: relative;
+  margin: 0;
+}
+
+/* Light Theme */
+.content-bg,
+.content-bg:hover {
+  background-color: #f9f5ff;
+  color: #f9f5ff;
+}
+
+.sidebar-bg,
+.sidebar-bg:hover {
+  background-color: #e6e9ef;
+  color: #e6e9ef;
+}
+
+.header-bg,
+.header-bg:hover {
+  background-color: #C4B5CF;
+  color: #C4B5CF;
+}
+
+.box-bg,
+.box-bg:hover {
+  background-color: #EBE7EF;
+  color: #EBE7EF;
+}
+
+.tippy-bg,
+.tippy-bg:hover {
+  background-color: #D8CEDF;
+  color: #D8CEDF;
+}
+
+.text,
+.text:hover {
+  background-color: #000000;
+  color: #000000;
+}
+
+.accent-c,
+.accent-c:hover {
+  background-color: #525f93;
+  color: #525f93;
+}
+
+.sidebartext,
+.sidebartext:hover {
+  background-color: #000;
+  color: #000;
+}
+
+.link,
+.link:hover {
+  background-color: #625275;
+  color: #625275;
+}
+
+.linkhover,
+.linkhover:hover {
+  background-color: #485870;
+  color: #485870;
+}
+
+.linkhover-bg,
+.linkhover-bg:hover {
+  background-color: #dad7f8;
+  color: #dad7f8;
+}
+
+.linkhover-button,
+.linkhover-button:hover {
+  background-color: #C1C8D7;
+  color: #C1C8D7;
+}
+
+.border,
+.border:hover {
+  background-color: #a99bb9;
+  color: #a99bb9;
+}
+
+/* Dark Theme */
+.content-bgd,
+.content-bgd:hover {
+  background-color: #3c4c5f;
+  color: #3c4c5f;
+}
+
+.sidebar-bgd,
+.sidebar-bgd:hover {
+  background-color: #637381;
+  color: #637381;
+}
+
+.header-bgd,
+.header-bgd:hover {
+  background-color: #b59fc24a;
+  color: transparent;
+}
+
+.box-bgd,
+.box-bgd:hover {
+  background-color: #645665;
+  color: #645665;
+}
+
+.tippy-bgd,
+.tippy-bgd:hover {
+  background-color: #645665;
+  color: #645665;
+}
+
+.textd,
+.textd:hover {
+  background-color: #fbfbf2;
+  color: #fbfbf2;
+}
+
+.accent-cd,
+.accent-cd:hover {
+  background-color: #e5fafe;
+  color: #e5fafe;
+}
+
+.sidebartextd,
+.sidebartextd:hover {
+  background-color: #fff;
+  color: #fff;
+}
+
+.linkd,
+.linkd:hover {
+  background-color: #F0FCFE;
+  color: #F0FCFE;
+}
+
+.linkhoverd,
+.linkhoverd:hover {
+  background-color: #fff;
+  color: #fff;
+}
+
+.linkhover-bgd,
+.linkhover-bgd:hover {
+  background-color: #71535a;
+  color: #71535a;
+}
+
+.linkhover-buttond,
+.linkhover-buttond:hover {
+  background-color: #516781;
+  color: #516781;
+}
+
+.borderd,
+.borderd:hover {
+  background-color: #d2c1d3;
+  color: #d2c1d3;
+}

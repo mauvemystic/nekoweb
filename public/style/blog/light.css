@@ -1,0 +1,60 @@
+:root {
+  --header-background-color: #8f86ae;
+  --link-color: #897981;
+  --header-color: #3b304a;
+}
+
+body {
+  background-color: #cdb3e5;
+  background-image: url('./coloredocean.png');
+}
+
+hr {
+  border: solid #8f86ae;
+}
+
+a {
+  color:var(--link-color);
+}
+
+a:hover { 
+  background-color: #fbfafe;
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--header-color);
+}
+
+/* #CONTAINER is the rectangle that contains everything but the background! */
+#container {
+	background-color: #f5eef8;
+  color: #151515; 
+  outline-color: #7d7698;
+}
+
+/* HEADER STYLE */
+#header {
+  background-color: var(--header-background-color);
+  border-color: #7d7698;
+}
+
+#header li a {
+  color: var(--header-color);
+}
+
+#recentpostlistdiv a::before {
+  content: url(/imgs/pstar.gif);
+}
+
+button {
+  border-color: #7d7698;
+  background-color: #f5eef8;
+}
+
+button:hover {
+  background-color: #e8dded;
+}
+
+#postTags::before {
+  content: url(/imgs/pstar.gif) " ";
+}

@@ -1,0 +1,63 @@
+:root {
+  --header-background-color: #624228;
+  --link-color: #ffcf81;
+  --header-color: #f6debf;
+  --border-color: #f8f0c6;
+  --button-background-color: #37221c;
+}
+
+body {
+  background-color: #151515;
+  background-image: url('https://64.media.tumblr.com/7ee73fccf1fcbfd98aab473ed6eee151/c2504804c21676da-e1/s640x960/1aff51c2139c114b8c1a5f701555d892acf233d2.gifv');
+}
+
+hr {
+  border: solid #624228;
+}
+
+a {
+  color:var(--link-color);
+}
+
+a:hover { 
+  background-color: var(--header-background-color);
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--header-color);
+}
+
+/* #CONTAINER is the rectangle that contains everything but the background! */
+#container {
+	background-color: var(--button-background-color);
+  color: var(--header-color); 
+  outline-color: var(--border-color);
+}
+
+/* HEADER STYLE */
+#header {
+  background-color: var(--header-background-color);
+  border-color: var(--border-color);
+}
+
+#header li a {
+  color: var(--border-color);
+}
+
+#recentpostlistdiv a::before {
+  content: url(/imgs/orangestar.gif);
+}
+
+button {
+  border-color: var(--border-color);
+  background-color: var(--button-background-color);
+  color: var(--border-color);
+}
+
+button:hover {
+  background-color: #573a22;
+}
+
+#postTags::before {
+  content: url(/imgs/orangestar.gif) " ";
+}

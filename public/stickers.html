@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guestbook</title>
+    <meta content="Leave me a note!" name="description">
+
+    <meta property="og:image" content="./starrynight-wp.gif">
+    <meta property="og:description" content="My personal space on the web. ♡">
+    <meta property="og:title" content="mauvemystic's dream island">
+
+    <link href="./favicon(5).ico" rel="icon" type="image/x-icon">
+
+    <!-- CSS: -->
+    <link id="font" href="../fonts.css" rel="stylesheet">
+    <link href="../style/style.css" rel="stylesheet">
+    <link id="colortheme" href="../style/light.css" rel="stylesheet">
+    
+    <!-- JavaScript: -->
+    <script src="../script/layout.js"></script>
+    <script src="https://status.cafe/current-status.js?name=babycloudcakes" defer></script>
+    <script src="../script/lastfm.js"></script>
+
+    <script>
+      // Template generated with petrapixel's layout generator.
+      // (Please do not remove this credit.)
+      console.log("%c Template generated with petrapixel's layout generator.", "font-size: 14pt;");
+      console.log("%c https://petrapixel.neocities.org/coding/layout-generator", "font-size: 14pt;");
+    </script>
+  </head>
+  <body>
+    <!-- The next line is a skip-to-content link for keyboard users. Do not remove it! -->
+    <a href="#content" id="skip-to-content-link">Skip to content</a>
+
+    <div class="layout">
+      
+      <!-- =============================================== -->
+      <!-- Header (and Sidebars) will be loaded per JavaScript! Edit layout.js to change. -->
+      <!-- =============================================== -->
+
+      <main id="content"> <!-- Do NOT remove the ID here -->
+
+        <noscript>Please enable JavaScript to view this website! The sidebar uses JS to display the navigation on all pages, so it is easy to update when I make more pages. Please use the <a href="./sitemap">sitemap</a> to navigate if you have JS disabled!</noscript>
+
+        <!-- =============================================== -->
+        <!-- MAIN CONTENT -->
+        <!-- =============================================== -->
+
+        <h1>my digital stickerbook</h1>
+        <div class="info">Pages where I can keep digital stickers for my enjoyment! Original owners will be linked, if found.</div>
+        <!-- Tab links -->
+        <nav class="tab" aria-label="page">
+          <button class="tablinks" onclick="openMedia(event, 'page1')" id="defaultOpen">page 1</button>
+          <!-- to add second page
+          <button class="tablinks" onclick="openMedia(event, 'page2')">page 2</button>
+          -->
+        </nav>
+
+        <div id="page1" class="tabcontent">
+          <section style="background-image: url(/lined-paper.png); height: 1000px; -webkit-box-shadow: 1px 5px 10px 1px rgba(0,0,0,0.25); 
+        box-shadow: 1px 5px 10px 1px rgba(0,0,0,0.25); margin-top: 1em; padding: 1.5em;">
+          <img src="/imgs/stickers/001.png" width="125">
+          <img src="/imgs/stickers/002.png" width="125">
+          <img src="/imgs/stickers/003.png" width="125">
+          <img src="/imgs/stickers/004.png" width="125">
+        </section>
+        </div>
+
+        <div id="page2" class="tabcontent">
+          <section style="background-image: url(/lined-paper.png); height: 1000px; -webkit-box-shadow: 1px 5px 10px 1px rgba(0,0,0,0.25); 
+        box-shadow: 1px 5px 10px 1px rgba(0,0,0,0.25); margin-top: 1em;">
+          
+        </section>
+        </div>
+
+      </main>
+      
+      <!-- =============================================== -->
+      <!-- Footer will be loaded per JavaScript! Edit layout.js to change. -->
+      <!-- =============================================== -->
+
+    <!-- Closing .layout: -->
+    </div>
+
+    <!-- Add any additional Javascript code (<script></script>) here. -->
+    <!-- TABS SCRIPTS -->
+    <script>
+      function openMedia(evt, mediaName) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
+
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById(mediaName).style.display = "block";
+      evt.currentTarget.className += " active";
+      }
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+  
+  
+      <!--collapsible
+  
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("activetab");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

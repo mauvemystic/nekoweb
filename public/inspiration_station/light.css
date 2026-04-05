@@ -1,0 +1,46 @@
+:root {
+  /* Page background */
+  --background:#4a517a;
+    
+  /* Universal text and link colors */
+  --color:#14112e;
+  --link:#3700a6;
+    
+  /* Font family (can include fallbacks) */
+  --bodyfont: RainyHearts, sans-serif;
+
+  /* List background colors */
+  --color1: #dde2f8;
+  --color2: #ffd9d9;
+  --color3: #e5ffbb;
+  --color4: #ffddf5;
+  --color5: #c8ffff;
+    
+  /* Borders for each background color */
+  --color1border:#4c4c03;
+  --color2border:#624a04;
+  --color3border:#5a3702;
+  --color4border:#2f5131;
+  --color5border:#522508;
+    
+  /* Header background and border */
+  --header: #e8ebed;
+  --headerborder:#000000;
+    
+  /* Scrollbars */
+  --scrollbg:#e1e1e100;
+  --scrollcolor:#f1f1f1c9;
+}
+
+body {
+  background: url(water.jpg);
+}
+
+button, select {
+  background-color: #fff;
+  border: 1px solid #00000095;
+}
+
+button:hover, button:focus, select:hover, select:focus {
+  background-color: #e5e5e5;
+}
