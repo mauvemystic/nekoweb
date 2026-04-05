@@ -17,19 +17,21 @@
   border: 15px;
 }
 .site-box .follow {
-    top: 5px;
-    left: 5px;
+    top: 16px;
+    right: 169px;
     padding: 0px;
 }
 .site-box > a > p {
     color: #625275;
     font-size: 13px;
-    right: 8px;
+    left: 25px;
     text-align: right;
+    z-index: 2;
 }
 .site-box > a > span {
     color: #525f93;
-    text-align:center;
+    right: 15px;
+    
 }
 .site-box::after {
     content: url("https://mauvemystic.nekoweb.org/mauvemystic.nekoweb.org/imgs/bluedragon.png");
