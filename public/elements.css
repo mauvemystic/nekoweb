@@ -6,7 +6,7 @@
 
 /* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://lune.dimden.dev/405a44b7e5.png */
 .site-box {
-    text-align: center;
+    text-align: right;
     background-image: url(https://mauvemystic.nekoweb.org/mauvemystic.nekoweb.org/purpclouds-wp.png); /* Only nekoweb URLs allowed, use full url to your site like https://example.nekoweb.org/images/coolbg.png */
     background-repeat: repeat;
     color: #b08271;
@@ -18,15 +18,15 @@
   border: 0px;
 }
 .site-box .follow {
-    content: url("https://mauvemystic.nekoweb.org/mauvemystic.nekoweb.org/icons/pstar6.png");
-    top: 13px;
+
+    top: 5px;
     left: 5px;
     padding: 0px;
 }
 .site-box > a > p {
     color: #f9f5ff;
     font-weight: bold;
-    top: -10px;
+    right: 15px;
 }
 .site-box > a > span {
     color: #fff;
