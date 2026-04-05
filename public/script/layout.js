@@ -417,7 +417,7 @@ function headerHTML() {
           </details>
         </nav>
 
-        <!--# follow -->
+        <iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>
 
         <div class="sidebar-section">
           <div class="sidebar-title"><label for="fontFamily">Font/Theme</label></div>
@@ -470,7 +470,7 @@ function footerHTML() {
 
       <footer>
         <div>
-          mauvemystic c. 2026   <img src="./imgs/lavender-rose.png" width="9px">   <a href="./sitemap">sitemap</a>   <img src="./imgs/lavender-rose.png" width="9px">   <a href="#">back to top</a>
+          mauvemystic c. 2026   <img src="./imgs/lavender-rose.png" width="9px">   <a href='https://nekoweb.org/follow/mauvemystic.nekoweb.org'>nekoweb profile</a>   <img src="./imgs/lavender-rose.png" width="9px">   <a href="./sitemap">sitemap</a>   <img src="./imgs/lavender-rose.png" width="9px">   <a href="#">back to top</a>
         </div>
       </footer>`;
 }

@@ -25,11 +25,22 @@
 }
 .site-box > a > p {
     color: #f9f5ff;
+    font-size: 13px;
     font-weight: bold;
     right: 15px;
 }
 .site-box > a > span {
     color: #fff;
+}
+.site-box::after {
+    content: url("https://mauvemystic.nekoweb.org/mauvemystic.nekoweb.org/imgs/bluedragon.png");
+    position: absolute;
+    background-size: contain;
+    top: 80px; /* for placement */
+    left: 10px;
+    width: 10px;
+    height: 10px;
+    z-index: 1;
 }
 
 /* Style for your post box (must start with ".post-box") */
