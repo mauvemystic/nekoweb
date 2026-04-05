@@ -1,5 +1,5 @@
 * {
-  cursor: url('/cursors/cursor_point1e1.gif') 0 0, default;
+  cursor: url('/public/cursors/cursor_point1e1.gif') 0 0, default;
 }
 
 html {
@@ -73,7 +73,7 @@ img {
 
 a:hover { 
   background-color: #fbfafe;
-  cursor: url('/cursors/cursor_anipoint1e.gif') 0 0, default;
+  cursor: url('/public/cursors/cursor_anipoint1e.gif') 0 0, default;
 }
 
 h1, h2, h3, h4, h5 {
@@ -195,12 +195,12 @@ h4 {
 
 @font-face {
   font-family: 'DiamondDreams'; /*a name to be used later*/
-  src: url('/fonts/DiamondDreams-yw8Dq.ttf'); /*URL to font*/
+  src: url('/public/fonts/DiamondDreams-yw8Dq.ttf'); /*URL to font*/
 }
 
 @font-face {
   font-family: 'Delius'; /*a name to be used later*/
-  src: url('/fonts/Delius-Regular.ttf'); /*URL to font*/
+  src: url('/public/fonts/Delius-Regular.ttf'); /*URL to font*/
 }
 
 #postTitleH1 {
@@ -209,7 +209,7 @@ h4 {
 }
 
 #postTitleH1::before {
-  content: url(/imgs/pflowers.gif) " ";
+  content: url(/public/imgs/pflowers.gif) " ";
   position: relative;
   bottom: 2px;
 }

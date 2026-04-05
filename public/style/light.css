@@ -163,12 +163,12 @@ h2:target {
 
 main ul li::marker,
 #statusdrop ul li::marker {
-  content: url(/imgs/bullet_purple.png) " ";
+  content: url(../imgs/bullet_purple.png) " ";
 }
 
 /* LIST-LIKE ITEMS */
 .generallist::before {
-  content: " " url(/imgs/blackbow.gif) " ";
+  content: " " url(../imgs/blackbow.gif) " ";
 }
 
 /* -------------------------------------------------------- */

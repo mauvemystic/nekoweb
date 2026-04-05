@@ -323,7 +323,7 @@ function headerHTML() {
           </details>
           <details name="tab"><summary> Island Info</summary>
             <ul>
-              <li class="new"><a href="/about-the-island" class="hvr-wobble-horizontal">&nbsp;about the island</a></li>
+              <li><a href="/about-the-island" class="hvr-wobble-horizontal">&nbsp;about the island</a></li>
               <li><a href="/todo" class="hvr-wobble-horizontal">&nbsp;todos</a></li>
               <li><a href="/changelog" class="hvr-wobble-horizontal">&nbsp;changelog</a></li>
               <li><a href="/styleguide" class="hvr-wobble-horizontal">&nbsp;style guide</a></li>
@@ -331,11 +331,51 @@ function headerHTML() {
           </details>
           <details name="tab"><summary> Links Out</summary>
             <ul>
-              <li class="update"><a href="/resources" class="hvr-wobble-horizontal">&nbsp;resources</a></li>
+              <li><a href="/resources" class="hvr-wobble-horizontal">&nbsp;resources</a></li>
               <li><a href="/other_sites" class="hvr-wobble-horizontal">&nbsp;sites to see</a></li>
             </ul>
           </details>
 	      </nav>
+        
+        <div class="sidebar-section">
+        <div class="sidebar-title">Status</div>
+          <blockquote>
+            <span class="bold">listening to:</span>
+            <div id="listening"><span id="trackName">nothing at the moment!</span></div>
+          </blockquote>
+          <blockquote>
+            <div id="statuscafe">
+              <div id="statuscafe-username"></div>
+              <div id="statuscafe-content"></div>
+          </blockquote>
+        </div>
+        
+        <div class="sidebar-section deskside">
+        <div class="sidebar-title">Currently</div>
+          <ul>
+            <li><span class="bold">date</span> <time datetime="2026-04-01">04.01.2026<time></li>
+            <li><span class="bold">watching</span> jujutsu kaisen season 3</li>
+            <li><span class="bold">reading</span> nothing atm</li>
+            <li><span class="bold">playing</span> Murdoku</li>
+            <li><span class="bold">learning</span> how to use Linux</li>
+            <li><span class="bold">loving</span> my job so far!!</li>
+          </ul>
+        
+        </div>
+
+        <details id="statusdrop"><summary><div id="statusdrophead">Currently</div></summary>
+          <ul>
+            <li><span class="bold">date</span> <time datetime="2026-04-01">04.01.2026<time></li>
+            <li><span class="bold">watching</span> jujutsu kaisen season 3</li>
+            <li><span class="bold">reading</span> nothing atm</li>
+            <li><span class="bold">playing</span> Murdoku</li>
+            <li><span class="bold">learning</span> how to use Linux</li>
+            <li><span class="bold">loving</span> my job so far!!</li>
+          </ul>
+          </details>
+        </div>
+
+        <hr class="nav">
 
         <nav class="mobileside">
           <details id="navdrop"><summary class="sum"><div id="navdrophead">Navigation</div></summary>
@@ -405,49 +445,14 @@ function headerHTML() {
             <button onclick="window.open('/webdeck-player/index.html', 'Web Deck Player', 'height=250, width=600')" class="center">Open music player</button>
           </blockquote>
         </div>
-        
-        <div class="sidebar-section">
-        <div class="sidebar-title">Status</div>
-          <blockquote>
-            <span class="bold">listening to:</span>
-            <div id="listening"><span id="trackName">nothing at the moment!</span></div>
-          </blockquote>
-          <blockquote>
-            <div id="statuscafe">
-              <div id="statuscafe-username"></div>
-              <div id="statuscafe-content"></div>
-          </blockquote>
-        </div>
-        
-        <div class="sidebar-section deskside">
-        <div class="sidebar-title">Currently</div>
-          <ul>
-            <li><span class="bold">date</span> <time datetime="2026-04-01">04.01.2026<time></li>
-            <li><span class="bold">watching</span> jujutsu kaisen season 3</li>
-            <li><span class="bold">reading</span> nothing atm</li>
-            <li><span class="bold">playing</span> Murdoku</li>
-            <li><span class="bold">learning</span> how to use Linux</li>
-            <li><span class="bold">loving</span> my job so far!!</li>
-          </ul>
-        
-        </div>
-
-        <details id="statusdrop"><summary><div id="statusdrophead">Currently</div></summary>
-          <ul>
-            <li><span class="bold">date</span> <time datetime="2026-04-01">04.01.2026<time></li>
-            <li><span class="bold">watching</span> jujutsu kaisen season 3</li>
-            <li><span class="bold">reading</span> nothing atm</li>
-            <li><span class="bold">playing</span> Murdoku</li>
-            <li><span class="bold">learning</span> how to use Linux</li>
-            <li><span class="bold">loving</span> my job so far!!</li>
-          </ul>
-          </details>
-        </div>
       </aside>
 
       `;
       
+      
 }
+
+
 
 function footerHTML() {
   // ${nesting} outputs "./" or "../" depending on current page depth.
@@ -463,7 +468,7 @@ function footerHTML() {
 
       <footer>
         <div>
-          mauvemystic c. 2026   <img src="./imgs/lavender-rose.png" width="9px">   <a href="https://neocities.org/site/mauvemystic">my neocities profile</a>   <img src="./imgs/lavender-rose.png" width="9px">   <a href="./sitemap">sitemap</a>   <img src="./imgs/lavender-rose.png" width="9px">   <a href="#">back to top</a>
+          mauvemystic c. 2026   <img src="./imgs/lavender-rose.png" width="9px">   <a href="./sitemap">sitemap</a>   <img src="./imgs/lavender-rose.png" width="9px">   <a href="#">back to top</a>
         </div>
       </footer>`;
 }

@@ -7,7 +7,7 @@
   /* Text: */
   --font: RainyHearts, Monaco, monospace;
   --heading-font: Summer, Lucida Console, monospace;
-  --font-size: 17px;
+  --font-size: 18px;
 
   /* Other Settings: */
   --margin: 10px;
@@ -1704,12 +1704,17 @@ select,
 @media (max-width: 970px) {
   .layout {
     width: 100%;
-    grid-template: "header" auto  "leftSidebar" auto "rightSidebar" auto "main" auto "footer" auto / 1fr;
+    grid-template: "header" auto  "leftSidebar" auto "main" auto "rightSidebar" auto "footer" auto / 1fr;
     /* Confused by the grid? Check out my tutorial: https://petrapixel.neocities.org/coding/positioning-tutorial#grid */
   }
 
   .deskside {
     display: none;
+  }
+
+  hr.nav {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
   }
 
   nav {

@@ -40,15 +40,15 @@
 
 @font-face {
   font-family: 'DiamondDreams'; /*a name to be used later*/
-  src: url('/fonts/DiamondDreams-yw8Dq.ttf'); /*URL to font*/
+  src: url('./fonts/DiamondDreams-yw8Dq.ttf'); /*URL to font*/
 }
 
 @font-face {
   font-family: 'Delius'; /*a name to be used later*/
-  src: url('/fonts/Delius-Regular.ttf'); /*URL to font*/
+  src: url('./fonts/Delius-Regular.ttf'); /*URL to font*/
 }
 
 @font-face {
   font-family: 'CyborgSister'; /*a name to be used later*/
-  src: url('/fonts/CyborgSister.ttf'); /*URL to font*/
+  src: url('./fonts/CyborgSister.ttf'); /*URL to font*/
 }

@@ -305,17 +305,17 @@ if (document.title === "Blog Post") {
 
 // Multiple Theme Switch
 function lightmode() {
-  document.getElementById('colortheme').setAttribute('href', '/style/blog/light.css');}
+  document.getElementById('colortheme').setAttribute('href', '/public/style/blog/light.css');}
   
 function darkmode() {
-  document.getElementById('colortheme').setAttribute('href', '/style/blog/dark.css');}
+  document.getElementById('colortheme').setAttribute('href', '/public/style/blog/dark.css');}
 
         function darkmode() {
-  document.getElementById('colortheme').setAttribute('href', '/style/blog/dark.css');
+  document.getElementById('colortheme').setAttribute('href', '/public/style/blog/dark.css');
 localStorage.setItem('theme', 'dark');}
 
 function lightmode() {
-  document.getElementById('colortheme').setAttribute('href', '/style/blog/light.css');
+  document.getElementById('colortheme').setAttribute('href', '/public/style/blog/light.css');
 localStorage.setItem('theme', 'light');}
 
 if(localStorage.getItem('theme') == 'dark'){
