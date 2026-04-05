@@ -7,30 +7,28 @@
 /* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://lune.dimden.dev/405a44b7e5.png */
 .site-box {
     text-align: right;
-    background-image: url(https://mauvemystic.nekoweb.org/mauvemystic.nekoweb.org/purpclouds-wp.png); /* Only nekoweb URLs allowed, use full url to your site like https://example.nekoweb.org/images/coolbg.png */
+    background-image: url(''); /* Only nekoweb URLs allowed, use full url to your site like https://example.nekoweb.org/images/coolbg.png */
     background-repeat: repeat;
-    color: #b08271;
+    color: transparent;
     font-size: 10px;
-    border-radius:15px;
 }
 .site-box .sitefeature {
   border-radius:15px;
-  border: 0px;
+  border: 15px;
 }
 .site-box .follow {
-
     top: 5px;
     left: 5px;
     padding: 0px;
 }
 .site-box > a > p {
-    color: #f9f5ff;
+    color: #625275;
     font-size: 13px;
-    font-weight: bold;
     right: 8px;
+    text-align: right;
 }
 .site-box > a > span {
-    color: #fff;
+    color: #525f93;
     text-align:center;
 }
 .site-box::after {
@@ -38,7 +36,7 @@
     position: absolute;
     background-size: contain;
     top: 80px; /* for placement */
-    left: 10px;
+    left: 0px;
     width: 10px;
     height: 10px;
     z-index: 1;
