@@ -14,11 +14,11 @@
 }
 .site-box .sitefeature {
   border-radius:15px;
-  border: 15px;
+  border: 2px solid #C1C8D7;
 }
 .site-box .follow {
     top: 16px;
-    right: 179px;
+    right: 189px;
     padding: 0px;
 }
 .site-box > a > p {
