@@ -27,10 +27,11 @@
     color: #f9f5ff;
     font-size: 13px;
     font-weight: bold;
-    right: 15px;
+    right: 8px;
 }
 .site-box > a > span {
     color: #fff;
+    text-align:center;
 }
 .site-box::after {
     content: url("https://mauvemystic.nekoweb.org/mauvemystic.nekoweb.org/imgs/bluedragon.png");
