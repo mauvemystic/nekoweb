@@ -4,34 +4,35 @@
     Setting CSS that breaks main nekoweb site on purpose is prohibited and may result in ban and site deletion!
 */
 
-/* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://nekoweb.org/assets/siteboxes.png */
+/* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://lune.dimden.dev/405a44b7e5.png */
 .site-box {
     text-align: center;
-    background-image: url(/assets/cookiebox.png); /* Only your-username.nekoweb.org URLs allowed, use FULL url to your file like https://your-username.nekoweb.org/your-username.nekoweb.org/bg.png */
-    background-repeat: no-repeat;
+    background-image: url(https://mauvemystic.nekoweb.org/mauvemystic.nekoweb.org/starrynight-wp.gif); /* Only nekoweb URLs allowed, use full url to your site like https://example.nekoweb.org/images/coolbg.png */
+    background-repeat: repeat;
     color: #b08271;
     font-size: 12px;
 }
+.site-box .follow {
+    content: url("https://mauvemystic.nekoweb.org/mauvemystic.nekoweb.org/icons/pstar6.png");
+    top: 5px;
+    left: 5px;
+    padding: 0px;
+}
 .site-box > a > p {
-    color: var(--darkbrown);
+    color: #f9f5ff;
     font-weight: bold;
 }
 .site-box > a > span {
-    color: var(--darkbrown);
-}
-
-/* Style for your 'Follow on Nekoweb' button (<iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>) */
-.follow {
-
+    color: #fff;
 }
 
 /* Style for your post box (must start with ".post-box") */
 .post-box {
-    background-color: #fff2cc;
-    border: 4px solid #ecbfa6;
+    background-color: #EBE7EF;
+    border: 2px solid #625275;
     padding: 15px;
-    border-radius: 5px;
-    color: #634c53;
+    border-radius: 15px;
+    color: #485870;
     font-weight: normal;
 }
 

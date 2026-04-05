@@ -417,6 +417,8 @@ function headerHTML() {
           </details>
         </nav>
 
+        <!--# follow -->
+
         <div class="sidebar-section">
           <div class="sidebar-title"><label for="fontFamily">Font/Theme</label></div>
           <blockquote>
