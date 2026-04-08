@@ -6,12 +6,12 @@
 :root {
   /* Background Colors: */
   --background-color: #3c4c5f;
-  --content-background-color: #645665;
-  --sidebar-background-color: #637381;
-  --header-background-color: #b59fc24a;
-  --box-background-color: #7D6C7E;
+  --content-background-color: #2b2b34;
+  --sidebar-background-color: #424150;
+  --header-background-color: #b59fc286;
+  --box-background-color: #554a55;
   --tippy-background-color: #645665;
-  --link-background-color-hover: #516781;
+  --link-background-color-hover: #5a51819c;
 
   /* Text Colors: */
   --text-color: #fff;
@@ -104,13 +104,13 @@ a[rel="external"]:hover {
 /* -------------------------------------------------------- */
 
 button, .myBtn, .bttBtn {
-  background-color: #768eb5;
+  background-color: var(--box-background-color);
   color: #f6f6f7;
   border: 1px solid;
 }
 
 button:hover, button:focus, .myBtn:hover, .myBtn:focus, .bttBtn:hover, .bttBtn:focus {
-  background-color: #687d9f;
+  background-color: #b59fc286;
   color: #f6f6f7;
 }
 
@@ -153,11 +153,11 @@ details:hover,
 nav details:not(#navdrop) summary:hover, 
 nav details:not(#navdrop) summary:active, 
 nav details:not(#navdrop)[open] summary {
-  background-color: #718291;
+  background-color: #59686a;
 }
 
 details[open] {
-  background: #718291;
+  background: #59686a;
 }
 
 details summary::marker,
@@ -276,7 +276,7 @@ ul.bullets {
 /* -------------------------------------------------------- */
 
 select {
-  background-color: #768eb5;
+  background-color: var(--box-background-color);
   color: #f6f6f7;
   border: 1px solid;
 }
