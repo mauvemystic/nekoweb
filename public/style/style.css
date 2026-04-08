@@ -1095,7 +1095,7 @@ details summary h3 {
   text-align: center;
   font-size: 1.7em;
   padding-top: 1.65em;
-  margin-bottom: -0.2em;
+  margin-bottom: -0.5em;
 }
 
 .tapeheader2 {
@@ -1324,19 +1324,7 @@ ul.starbullets li::marker {
   padding-left: 0.75em;
 }
 
-#lastmodbox {
-  background: #f1f1d0a8;
-  padding: .45rem;
-  font-weight: 700;
-  display: table; /* keep the background color wrapped tight */
-  margin: 10px auto 0px auto; /* keep the table centered */
-  border-radius: 15px;
-  border: 1px dashed #485870;
-}
-
 /* Resource Links */
-
-
 .resourcefave::before {
   content: " " url(../imgs/heart.png) " ";
 }
