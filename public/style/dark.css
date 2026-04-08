@@ -6,19 +6,19 @@
 :root {
   /* Background Colors: */
   --background-color: #3c4c5f;
-  --content-background-color: #7D6C7E;
+  --content-background-color: #645665;
   --sidebar-background-color: #637381;
   --header-background-color: #b59fc24a;
-  --box-background-color: #645665;
+  --box-background-color: #7D6C7E;
   --tippy-background-color: #645665;
   --link-background-color-hover: #516781;
 
   /* Text Colors: */
-  --text-color: #fbfbf2;
-  --accent-color: #e5fafe;
+  --text-color: #fff;
+  --accent-color: #cbf7fd;
   --sidebar-text-color: #fff;
   --link-color: #F0FCFE;
-  --link-color-hover: #fff;
+  --link-color-hover: #f4ffff;
 
   /* Other Settings: */
   --border: 1.5px solid #beadbf;
@@ -85,6 +85,11 @@ a[rel="external"]:hover {
 .sidebar-title::before, 
 .tapeheader::before {
   content: " " url(../imgs/lightorb.png) " ";
+}
+
+#lastmodbox {
+  background: #f3ee5f46;
+  border: 1px dashed #f2f8b8bb;
 }
 
 /* LINK BUTTONS */
