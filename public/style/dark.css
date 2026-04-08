@@ -31,7 +31,7 @@
 
 header {
   background: var(--content-background-color);
-  background-image: url(/gradient.gif);
+  background-image: url(../gradient.gif);
   background-size: cover;
   filter: saturate(30%);
 }
@@ -47,7 +47,7 @@ header {
 }
 
 .sidebar-section ul li::marker {
-  content: url(/imgs/bullet_light.png) " ";
+  content: url(../imgs/bullet_light.png) " ";
 }
 
 /* -------------------------------------------------------- */
@@ -84,7 +84,7 @@ a[rel="external"]:hover {
 .minitapebox h2::before,
 .sidebar-title::before, 
 .tapeheader::before {
-  content: " " url(/imgs/lightorb.png) " ";
+  content: " " url(../imgs/lightorb.png) " ";
 }
 
 /* LINK BUTTONS */
@@ -163,7 +163,7 @@ details summary::marker,
 /* RESOURCES DROPDOWNS */
 
 .resourcelink::before {
-  content: url(/imgs/whitebow.gif) " ";
+  content: url(../imgs/whitebow.gif) " ";
 }
 
 /* -------------------------------------------------------- */
@@ -180,16 +180,16 @@ h2:target {
 
 main ul li::marker, 
 #statusdrop ul li::marker {
-  content: url(/imgs/bullet_light.png) " ";
+  content: url(../imgs/bullet_light.png) " ";
 }
 
 ul.bullets {
-  list-style-image: url("/imgs/bullet_light.png");
+  list-style-image: url("../imgs/bullet_light.png");
 }
 
 /* LIST-LIKE ITEMS */
 .generallist::before {
-  content: " " url(/imgs/whitebow.gif) " ";
+  content: " " url(../imgs/whitebow.gif) " ";
   }
 
 /* -------------------------------------------------------- */
@@ -319,7 +319,7 @@ select {
 } 
 
 a[rel="external"] {
-  background: url(/imgs/externalwhite.png) no-repeat;
+  background: url(../imgs/externalwhite.png) no-repeat;
   background-origin: padding-box;
   padding-right: 1.1em;
   background-size: 0.75em;
@@ -336,9 +336,9 @@ tr:nth-child(even){background-color: #ebe7ef25;}
 tr:hover:not(:first-child) {background-color: #ebe7ef45;}
 
 nav details:not(#navdrop) ul li.new::marker {
-  content:url(/imgs/newwhite.gif);
+  content:url(../imgs/newwhite.gif);
 }
 
 nav details:not(#navdrop) ul li.update::marker {
-  content:url(/imgs/updatewhite.gif);
+  content:url(../imgs/updatewhite.gif);
 }

@@ -31,7 +31,7 @@
 
 * {
   box-sizing: border-box;
-  cursor: url('/cursors/crescentmoon.cur') 13 3, default;
+  cursor: url('../cursors/crescentmoon.cur') 13 3, default;
 }
 
 body {
@@ -113,7 +113,7 @@ footer a:focus,
 .cbox:hover {
   color: var(--link-color-hover);
   text-decoration: none;
-  cursor: url("/cursors/star.png"), pointer; 
+  cursor: url("../cursors/star.png"), pointer; 
 }
 
 .img:hover {
@@ -716,7 +716,7 @@ details[open] summary::marker {
 }
 
 .spiritlink::before {
-  content: " " url(/imgs/purplebullet.gif) " ";
+  content: " " url(../imgs/purplebullet.gif) " ";
 }
 
 /* Medialog Dropdowns */
@@ -732,7 +732,7 @@ details[open] summary::marker {
 }
 
 .notes summary {
-  cursor: url('/cursors/star.png') 0 0, default;
+  cursor: url('../cursors/star.png') 0 0, default;
   margin-top: -0.4em;
 }
 
@@ -747,11 +747,11 @@ details[open] summary::marker {
 
 .notes summary::marker,
 :is(::-webkit-details-marker) {
-  content: url(/imgs/talkbubble.gif);
+  content: url(../imgs/talkbubble.gif);
 }
 
 .notes[open] summary::marker {
-  content: url(/imgs/minus.png);
+  content: url(../imgs/minus.png);
   width: 10px;
 }
 
@@ -881,7 +881,7 @@ h2.c {
   padding: 11px 0px 0px 9px;
   border-radius: 15px;
   letter-spacing: 0.2em;
-  background-image: url(/style/cartographer.png);
+  background-image: url(../style/cartographer.png);
 }
 
 .flexaltar h2, 
@@ -969,6 +969,7 @@ details summary h3 {
   justify-content: center;
   align-items: flex-start;
   gap: 2em;
+  margin-top: 2em;
 }
 
 .flexcontainer {
@@ -1005,6 +1006,7 @@ details summary h3 {
   flex-direction: row;
   gap: 2.50em 1em;
   flex-wrap: wrap;
+  margin-top: 2em;
 }
 
 /* Inside flexbox styling */
@@ -1037,7 +1039,7 @@ details summary h3 {
 }
 
 .musicreviews {
-  height: 937px;
+  height: 1050px;
   overflow: auto;
   flex: 1;
 }
@@ -1079,7 +1081,7 @@ details summary h3 {
 }
 
 .tapebox:before {
-  content: url('/imgs/flowers-purple.png');
+  content: url('../imgs/flowers-purple.png');
   right: -75px;
   top: -95px;
   transform: scale(0.30) rotate(3deg);
@@ -1093,6 +1095,13 @@ details summary h3 {
   text-align: center;
   font-size: 1.7em;
   padding-top: 1.65em;
+  margin-bottom: -0.2em;
+}
+
+.tapeheader2 {
+  text-align: center;
+  font-size: 1.2em;
+  padding-top: 1em;
   margin-bottom: -0.5em;
 }
 
@@ -1107,7 +1116,7 @@ details summary h3 {
 }
 
 .minitapebox:before {
-  content: url('/imgs/starsmoon.png');
+  content: url('../imgs/starsmoon.png');
   left: -135px;
   top: -65px;
   transform: scale(0.30) rotate(-3deg);
@@ -1134,15 +1143,15 @@ ul.starbullets li::marker {
 }
 
 ul.heartbullets li::marker {
-  content: url("/imgs/purpheartbul.gif") " ";
+  content: url("../imgs/purpheartbul.gif") " ";
 }
 
 ul.crossbullets li::marker {
-  content: url("/imgs/purpcrossbul.gif") " ";
+  content: url("../imgs/purpcrossbul.gif") " ";
 }
 
 ul.starbullets li::marker {
-  content: url("/imgs/purpstarbul.gif") " ";
+  content: url("../imgs/purpstarbul.gif") " ";
 }
 
 /* -------------------------------------------------------- */
@@ -1261,7 +1270,6 @@ ul.starbullets li::marker {
 .info {
   border-radius: 7px;
   padding: 15px;
-  margin-bottom: 3em;
 }
 
 /* Links as buttons */
@@ -1316,11 +1324,21 @@ ul.starbullets li::marker {
   padding-left: 0.75em;
 }
 
+#lastmodbox {
+  background: #f1f1d0a8;
+  padding: .45rem;
+  font-weight: 700;
+  display: table; /* keep the background color wrapped tight */
+  margin: 10px auto 0px auto; /* keep the table centered */
+  border-radius: 15px;
+  border: 1px dashed #485870;
+}
+
 /* Resource Links */
 
 
 .resourcefave::before {
-  content: " " url(/imgs/heart.png) " ";
+  content: " " url(../imgs/heart.png) " ";
 }
 
 /* Floating Avatar */
@@ -1447,7 +1465,7 @@ table a[href^="#"]:hover {
   float: left;
   border-radius: 9px;
   outline: none;
-  cursor: url("/cursors/star.png"), pointer; 
+  cursor: url("../cursors/star.png"), pointer; 
   padding: 8px 10px 0px 10px;
   transition: 0.3s;
   margin-right: 2px;
@@ -1486,12 +1504,6 @@ table a[href^="#"]:hover {
 @keyframes fadeEffect {
   from {opacity: 0;}
   to {opacity: 1;}
-}
-
-/* MEDIA LOG, LAST UPDATED TEXT */
-p.lastupdate {
-  text-align: center;
-  font-weight: bold;
 }
 
 /* MUSIC PLAYER */
@@ -1552,27 +1564,27 @@ i.fas:hover {
 }
 
 .movie::marker {
-  content: url(/medialog/icons/media-movie.png) " ";
+  content: url(../medialog/icons/media-movie.png) " ";
 }
 
 .yt::marker {
-  content: url(/medialog/icons/media-yt.png) " ";
+  content: url(../medialog/icons/media-yt.png) " ";
 }
 
 .music::marker {
-  content: url(/medialog/icons/media-music.png) " ";
+  content: url(../medialog/icons/media-music.png) " ";
 }
 
 .show::marker {
-  content: url(/medialog/icons/media-tv.png) " ";
+  content: url(../medialog/icons/media-tv.png) " ";
 }
 
 .reading::marker {
-  content: url(/medialog/icons/media-reading.png) " ";
+  content: url(../medialog/icons/media-reading.png) " ";
 }
 
 .comic::marker {
-  content: url(/medialog/icons/media-comic.png) " ";
+  content: url(../medialog/icons/media-comic.png) " ";
 }
 
 lite-youtube {
@@ -1634,7 +1646,7 @@ lite-youtube {
 }
 
 .checkoff::before {
-  content: " " url(/imgs/check.gif) " ";
+  content: " " url(..imgs/check.gif) " ";
 }
 
 .check::before {

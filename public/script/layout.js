@@ -338,6 +338,73 @@ function headerHTML() {
 	      </nav>
         
         <div class="sidebar-section">
+          <nav class="mobileside">
+          <details id="navdrop"><summary class="sum"><div id="navdrophead">Navigation</div></summary>
+            <ul>
+	          <li><a href="/" class="hvr-wobble-horizontal">home</a></li>
+	          <li><a href="/aboutme" class="hvr-wobble-horizontal">about me</a></li>
+            <li><a href="/now" class="hvr-wobble-horizontal">now</a></li>
+            <li><a href="/defaults" class="hvr-wobble-horizontal">my defaults</a></li>
+            <li><a href="/guestbook" class="hvr-wobble-horizontal">guestbook</a></li>
+          </ul>
+          <details name="tab"><summary> For Me</summary>
+            <ul>
+              <li><a href="/blog" class="hvr-wobble-horizontal">&nbsp;journal</a></li>
+              <li><a href="/inspiration_station/" class="hvr-wobble-horizontal">&nbsp;inspiration station</a></li>
+            </ul>
+          </details>
+          <details name="tab"><summary> My Interests</summary>
+            <ul>
+              <li><a href="/medialog" class="hvr-wobble-horizontal">&nbsp;media log</a></li>
+              <li><a href="/collections" class="hvr-wobble-horizontal">&nbsp;collections</a></li>
+              <li><a href="/lists/" class="hvr-wobble-horizontal">&nbsp;my lists</a></li>
+              <li><a href="/altar" class="hvr-wobble-horizontal">&nbsp;altar</a></li>
+            </ul>
+          </details>
+          <details name="tab"><summary>  Island Info</summary>
+            <ul>
+              <li><a href="/about-the-island" class="hvr-wobble-horizontal">&nbsp;about the island<span class="new"></span></a><span class="new"></span></li>
+              <li><a href="/todo" class="hvr-wobble-horizontal">&nbsp;todos</a></li>
+              <li><a href="/changelog" class="hvr-wobble-horizontal">&nbsp;changelog</a></li>
+              <li><a href="/styleguide" class="hvr-wobble-horizontal">&nbsp;style guide</a></li>
+            </ul>
+          </details>
+          <details name="tab"><summary> Links Out</summary>
+            <ul>
+              <li><a href="/resources" class="hvr-wobble-horizontal">&nbsp;resources</a></li>
+              <li><a href="/other_sites" class="hvr-wobble-horizontal">&nbsp;sites to see</a></li>
+            </ul>
+          </details>
+        </nav>
+
+        <div class="sidebar-section">
+          <div class="sidebar-title"><label for="fontFamily">Font/Theme</label></div>
+          <blockquote>
+            <select name="fontFamily" id="fontFamily" class="center" style="margin-bottom: 10px">
+              <option value="rainyhearts">my default</option>
+              <option value="Courier New">Courier New</option>
+              <option value="Trebuchet MS">Trebuchet MS</option>
+            </select>
+
+            
+            <button class="center" onclick="darkmode()">dark mode</button>
+            <button class="center" onclick="lightmode()">light mode</button>  
+        
+            <!-- NEED TO LEARN TO SAVE CHOICES TO LOCAL STORAGE TO USE
+            <button onclick="toggleFont()">toggle font</button>
+            
+            <button onclick="toggleTheme()">toggle theme</button>  -->
+
+          </blockquote>
+        </div>
+
+        <div class="sidebar-section">
+          <div class="sidebar-title">Tunes</div>
+          <blockquote>
+            <p class="center" style="margin-bottom: 0.25em">Opens in a separate tab!</p>
+            <button onclick="window.open('/webdeck-player/index.html', 'Web Deck Player', 'height=250, width=600')" class="center">Open music player</button>
+          </blockquote>
+        </div>
         <iframe class="center" src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>
         <div class="sidebar-title">Status</div>
           <blockquote>
@@ -374,76 +441,6 @@ function headerHTML() {
             <li><span class="bold">loving</span> my job so far!!</li>
           </ul>
           </details>
-        </div>
-
-        <nav class="mobileside">
-          <hr class="nav">
-          <details id="navdrop"><summary class="sum"><div id="navdrophead">Navigation</div></summary>
-            <ul>
-	          <li><a href="/" class="hvr-wobble-horizontal">home</a></li>
-	          <li><a href="/aboutme" class="hvr-wobble-horizontal">about me</a></li>
-            <li><a href="/now" class="hvr-wobble-horizontal">now</a></li>
-            <li><a href="/defaults" class="hvr-wobble-horizontal">my defaults</a></li>
-            <li><a href="/guestbook" class="hvr-wobble-horizontal">guestbook</a></li>
-          </ul>
-          <details name="tab"><summary> For Me</summary>
-            <ul>
-              <li><a href="/blog" class="hvr-wobble-horizontal">&nbsp;journal</a></li>
-              <li><a href="/inspiration_station/" class="hvr-wobble-horizontal">&nbsp;inspiration station</a></li>
-            </ul>
-          </details>
-          <details name="tab"><summary> My Interests</summary>
-            <ul>
-              <li><a href="/medialog" class="hvr-wobble-horizontal">&nbsp;media log</a></li>
-              <li><a href="/collections" class="hvr-wobble-horizontal">&nbsp;collections</a></li>
-              <li><a href="/lists/" class="hvr-wobble-horizontal">&nbsp;my lists</a></li>
-              <li><a href="/altar" class="hvr-wobble-horizontal">&nbsp;altar</a></li>
-            </ul>
-          </details>
-          <details name="tab"><summary>  Island Info</summary>
-            <ul>
-              <li class="new"><a href="/about-the-island" class="hvr-wobble-horizontal">&nbsp;about the island<span class="new"></span></a><span class="new"></span></li>
-              <li><a href="/todo" class="hvr-wobble-horizontal">&nbsp;todos</a></li>
-              <li><a href="/changelog" class="hvr-wobble-horizontal">&nbsp;changelog</a></li>
-              <li><a href="/styleguide" class="hvr-wobble-horizontal">&nbsp;style guide</a></li>
-            </ul>
-          </details>
-          <details name="tab"><summary> Links Out</summary>
-            <ul>
-              <li  class="update"><a href="/resources" class="hvr-wobble-horizontal">&nbsp;resources</a></li>
-              <li><a href="/other_sites" class="hvr-wobble-horizontal">&nbsp;sites to see</a></li>
-            </ul>
-          </details>
-          </details>
-        </nav>
-
-        <div class="sidebar-section">
-          <div class="sidebar-title"><label for="fontFamily">Font/Theme</label></div>
-          <blockquote>
-            <select name="fontFamily" id="fontFamily" class="center" style="margin-bottom: 10px">
-              <option value="rainyhearts">my default</option>
-              <option value="Courier New">Courier New</option>
-              <option value="Trebuchet MS">Trebuchet MS</option>
-            </select>
-
-            
-            <button class="center" onclick="darkmode()">dark mode</button>
-            <button class="center" onclick="lightmode()">light mode</button>  
-        
-            <!-- NEED TO LEARN TO SAVE CHOICES TO LOCAL STORAGE TO USE
-            <button onclick="toggleFont()">toggle font</button>
-            
-            <button onclick="toggleTheme()">toggle theme</button>  -->
-
-          </blockquote>
-        </div>
-
-        <div class="sidebar-section">
-          <div class="sidebar-title">Tunes</div>
-          <blockquote>
-            <p class="center" style="margin-bottom: 0.25em">Opens in a separate tab!</p>
-            <button onclick="window.open('/webdeck-player/index.html', 'Web Deck Player', 'height=250, width=600')" class="center">Open music player</button>
-          </blockquote>
         </div>
       </aside>
 

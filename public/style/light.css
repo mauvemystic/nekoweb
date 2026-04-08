@@ -54,10 +54,6 @@ body::-webkit-scrollbar-track,
   background-color: rgba(255, 255, 255, 0.473);
 }
 
-.sidebar-section ul li::marker {
-  content: url(/imgs/bullet_purple.png) " ";
-}
-
 /* -------------------------------------------------------- */
 /* CONTENT */
 /* -------------------------------------------------------- */
@@ -79,7 +75,7 @@ a[rel="external"]:hover {
 .minitapebox h2::before, 
 .sidebar-title::before, 
 .tapeheader::before {
-  content: " " url(/imgs/purporb.png) " ";
+  content: " " url(../imgs/purporb.png) " ";
 }
 
 /* LINK BUTTONS */
@@ -146,7 +142,7 @@ details summary::marker,
 /* RESOURCES DROPDOWNS */
 
 .resourcelink::before {
-  content: " " url(/imgs/blackbow.gif) " ";
+  content: " " url(../imgs/blackbow.gif) " ";
 }
 
 /* -------------------------------------------------------- */
@@ -259,7 +255,7 @@ main ul li::marker,
 }
  
 a[rel="external"] {
-  background: url(/imgs/external.png) no-repeat;
+  background: url(../imgs/external.png) no-repeat;
   background-origin: padding-box;
   padding-right: 1.1em;
   background-size: 0.75em;
@@ -276,9 +272,9 @@ tr:nth-child(even){background-color: #ebe7ef80;}
 tr:hover:not(:first-child) {background-color: var(--box-background-color);}
 
 nav details:not(#navdrop) ul li.new::marker {
-  content:url(/imgs/new.gif);
+  content:url(../imgs/new.gif);
 }
 
 nav details:not(#navdrop) ul li.update::marker {
-  content:url(/imgs/update.gif);
+  content:url(../imgs/update.gif);
 }
