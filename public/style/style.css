@@ -34,22 +34,6 @@
   cursor: url('../cursors/crescentmoon.cur') 13 3, default;
 }
 
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  font-size: var(--font-size);
-  margin: 0;
-  padding: var(--margin);
-  color: var(--text-color);
-  font-family: 'RainyHearts';
-  line-height: 1.2;
-  background: var(--background-color);
-  background-image: url("/starrynight-wp.gif");
-  background-repeat: repeat;
-}
-
 ::selection {
   /* (Text highlighted by the user) */
   background: #f1f1d0a8;
@@ -1295,7 +1279,7 @@ ul.starbullets li::marker {
 .clique {
   border: 1px dashed #0000007a;
   padding: 0em 0.75em 0.5em 0.75em;
-  height: 130px;
+  height: 120px;
   overflow: auto;
   border-radius: 10px;
   align-self: center;

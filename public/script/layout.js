@@ -405,7 +405,6 @@ function headerHTML() {
             <button onclick="window.open('/webdeck-player/index.html', 'Web Deck Player', 'height=250, width=600')" class="center">Open music player</button>
           </blockquote>
         </div>
-        <iframe class="center" src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>
         <div class="sidebar-title">Status</div>
           <blockquote>
             <span class="bold">listening to:</span>
