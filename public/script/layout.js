@@ -341,11 +341,11 @@ function headerHTML() {
           <nav class="mobileside">
           <details id="navdrop"><summary class="sum"><div id="navdrophead">Navigation</div></summary>
             <ul>
-	          <li><a href="/" class="hvr-wobble-horizontal">home</a></li>
-	          <li><a href="/aboutme" class="hvr-wobble-horizontal">about me</a></li>
-            <li><a href="/now" class="hvr-wobble-horizontal">now</a></li>
-            <li><a href="/defaults" class="hvr-wobble-horizontal">my defaults</a></li>
-            <li><a href="/guestbook" class="hvr-wobble-horizontal">guestbook</a></li>
+	          <li><a href="/" class="hvr-wobble-horizontal" style="margin-right: 20px">home</a></li>
+	          <li><a href="/aboutme" class="hvr-wobble-horizontal" style="margin-right: 20px">about me</a></li>
+            <li><a href="/now" class="hvr-wobble-horizontal" style="margin-right: 20px">now</a></li>
+            <li><a href="/defaults" class="hvr-wobble-horizontal" style="margin-right: 20px">my defaults</a></li>
+            <li><a href="/guestbook" class="hvr-wobble-horizontal" style="margin-right: 20px">guestbook</a></li>
           </ul>
           <details name="tab"><summary> For Me</summary>
             <ul>
