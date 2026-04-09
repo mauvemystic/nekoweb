@@ -29,6 +29,22 @@
 /* BASICS */
 /* -------------------------------------------------------- */
 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: var(--font-size);
+  margin: 0;
+  padding: var(--margin);
+  color: var(--text-color);
+  font-family: 'RainyHearts';
+  line-height: 1.2;
+  background: var(--background-color);
+  background-image: url("../starrynight-wp.gif"); 
+  background-repeat: repeat;
+}
+
 * {
   box-sizing: border-box;
   cursor: url('../cursors/crescentmoon.cur') 13 3, default;
