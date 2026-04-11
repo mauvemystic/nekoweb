@@ -1039,7 +1039,7 @@ details summary h3 {
 }
 
 .musicreviews {
-  height: 1050px;
+  height: 915px;
   overflow: auto;
   flex: 1;
 }
@@ -2145,3 +2145,22 @@ lastfm-tracks {
     font-size: 1.2em;
     font-weight: 700;
   }
+
+  /* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: -40px;
+  left: 20px;
+  font-size: 60px;
+  filter: 
+    drop-shadow( 0 3px var(--header-background-color)) 
+    drop-shadow( 2px 0 var(--header-background-color)) 
+    drop-shadow( 0 -1px #e5fafe) 
+    drop-shadow( -1px 0 var(--header-background-color)) 
+    drop-shadow( 0 2px var(--inverse-color)) 
+    drop-shadow( 2px 0 var(--inverse-color)) 
+    drop-shadow( 0 -2px var(--inverse-color)) 
+    drop-shadow( -2px 0 var(--inverse-color));
+  font-family: Summer;
+}
+

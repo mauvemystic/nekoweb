@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 playlist</title>
+    <meta content="Music that I can't get enough of lately!" name="description">
+
+    <meta property="og:image" content="./starrynight-wp.gif">
+    <meta property="og:description" content="My personal space on the web. ♡">
+    <meta property="og:title" content="mauvemystic's dream island">
+
+    <link href="./favicon(5).ico" rel="icon" type="image/x-icon">
+
+    <!-- CSS: -->
+    <link id="font" href="fonts.css" rel="stylesheet">
+    <link href="./style/style.css" rel="stylesheet">
+    <link id="colortheme" href="./style/light.css" rel="stylesheet">
+    <link href="./style/musicplayer.css" rel="stylesheet">
+    
+    <!-- JavaScript: -->
+    <script src="./script/layout.js"></script>
+    <script src="https://status.cafe/current-status.js?name=babycloudcakes" defer></script>
+    <script src="./script/lastfm.js"></script>
+
+    <script>
+      // Template generated with petrapixel's layout generator.
+      // (Please do not remove this credit.)
+      console.log("%c Template generated with petrapixel's layout generator.", "font-size: 14pt;");
+      console.log("%c https://petrapixel.neocities.org/coding/layout-generator", "font-size: 14pt;");
+    </script>
+                 
+  </head>
+  <body>
+    <!-- The next line is a skip-to-content link for keyboard users. Do not remove it! -->
+    <a href="#content" id="skip-to-content-link">Skip to content</a>
+
+    <div class="layout">
+      
+      <!-- =============================================== -->
+      <!-- Header (and Sidebars) will be loaded per JavaScript! Edit layout.js to change. -->
+      <!-- =============================================== -->
+
+      <main id="content"> <!-- Do NOT remove the ID here -->
+
+        <noscript>Please enable JavaScript to view this website! The sidebar uses JS to display the navigation on all pages, so it is easy to update when I make more pages. Please use the <a href="./sitemap">sitemap</a> to navigate if you have JS disabled!</noscript>
+
+        <!-- =============================================== -->
+        <!-- MAIN CONTENT -->
+        <!-- =============================================== -->
+
+        <h1>stuck in my head 2026</h1>
+
+        <p class="info" style="margin-bottom: 5em;"><img src="./imgs/cd.gif" alt="" style="position: relative; top: 4px;"> Tracks I can't get enough of lately!<br>NOTE: Every song wasn't necessarily released this year, this is just the year it blessed my ears.<br>
+        <span style="font-style: italic"><small>*last updated <time datetime="2026-04-07">07 April 2026</time></small></span></p>
+        <!-- music player -->
+        <div class="player">
+          <div class="window">
+            <div class="title-bar">
+              <div class="title-bar-text"><sub><img class="titlebaricon" src="./musicplayer/CDicon.png" alt="cd player icon"></sub> m u s i c p l a y e r</div>
+              <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+              </div>
+            </div>
+            <div class="window-body">
+              <div class="flex">
+                <div id="imagestyle"><img class="ic" src="./musicplayer/avatar.jpg" alt="momo icon"></div>
+                <div id="musicplayer">
+                  <div class="songtitlewindow">
+                    <div class="flex"><marquee scrollamount="4" class="songtitle"></marquee></div>
+                  </div>
+                  <div class="seeking">
+                    <div class="current-time">00:00</div>
+                    <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                    <div class="total-duration">0:00</div>
+                  </div>
+ 
+                  <table class="controls">
+                    <tr>
+                      <td>
+                        <div class="prev-track" onclick="prevTrack()"><button><img src="./musicplayer/rewind.png" class="controlimg"></button></div>
+                      </td>
+                      <td>
+                        <div class="playpause-track" onclick="playpauseTrack()" ><button><img src="./musicplayer/play.png" class="controlimg"></button></div>
+                      </td>
+                      <td>
+                        <div class="next-track" onclick="nextTrack()"><button><img src="./musicplayer/fastforward.png" class="controlimg"></button></div>
+                      </td>
+                    </tr>
+                  </table>
+                  <audio id="music" src=""></audio> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2>Tracklist:</h2>
+        <div class="center">
+          <p class="tooltip"><img src="./musicplayer/album/waitingroom.webp" class="album" alt="Waiting Room by Jenevieve feat. Jordan Ward">
+          <span class="bottom-left">1</span>
+          <span class="tooltiptext">Waiting Room<br>by Jenevieve<br>feat. Jordan Ward</span></p>
+
+          <p class="tooltip"><img src="./musicplayer/album/bangbang.webp" class="album" alt="Bang Bang by IVE">
+          <span class="bottom-left">2</span>
+          <span class="tooltiptext">BANG BANG<br>by IVE</span></p>
+
+          <p class="tooltip"><img src="./musicplayer/album/404.webp" class="album" alt="404 (The New Era) by KiiiKiii">
+          <span class="bottom-left">3</span>
+          <span class="tooltiptext">404 (The New Era) by KiiiKiii</span></p>
+
+          <p class="tooltip"><img src="./musicplayer/album/rude.webp" class="album" alt="RUDE! by Hearts2Hearts">
+          <span class="bottom-left">4</span>
+          <span class="tooltiptext">RUDE! by Hearts2Hearts</span></p>
+
+          <p class="tooltip"><img src="./musicplayer/album/missthat.webp" class="album" alt="Miss That by Naomi Sharon">
+          <span class="bottom-left">5</span>
+          <span class="tooltiptext">Miss That by Naomi Sharon</span></p>
+
+          <p class="tooltip"><img src="./musicplayer/album/tellmewhatidid.webp" class="album" alt="TELL ME WHAT I DID by Tiffany Day">
+          <span class="bottom-left">6</span>
+          <span class="tooltiptext">TELL ME<br>WHAT I DID<br>by Tiffany Day</span></p>
+
+          <p class="tooltip"><img src="./musicplayer/album/losingyou.webp" class="album" alt="Losing You by Naomi Scott">
+          <span class="bottom-left">7</span>
+          <span class="tooltiptext">Losing You by Naomi Scott</span></p>
+
+          <p class="tooltip"><img src="./musicplayer/album/helicopter.webp" class="album" alt="HELICOPTER by A$AP Rocky">
+          <span class="bottom-left">8</span>
+          <span class="tooltiptext">HELICOPTER by A$AP Rocky</span></p>
+        </div>
+                
+    </div>
+
+      </main>
+      
+      <!-- =============================================== -->
+      <!-- Footer will be loaded per JavaScript! Edit layout.js to change. -->
+      <!-- =============================================== -->
+
+    <!-- Closing .layout: -->
+    </div>
+
+    <!-- Add any additional Javascript code (<script></script>) here. -->
+  </body>
+
+  <!-- PLAYLIST -->
+  <script>
+    // initiate variables
+    let track_name = document.querySelector(".songtitle");
+  
+    let playpause_btn = document.querySelector(".playpause-track");
+    let next_btn = document.querySelector(".next-track");
+    let prev_btn = document.querySelector(".prev-track");
+  
+    let seek_slider = document.querySelector(".seek_slider");
+    let curr_time = document.querySelector(".current-time");
+    let total_duration = document.querySelector(".total-duration");
+  
+    let track_index = 0;
+    let isPlaying = false;
+    let updateTimer;
+  
+    // create new audio element
+    let curr_track = document.getElementById("music");
+
+    // DEFINE YOUR SONGS HERE!!!!!
+    let track_list = [
+      {
+        name:"Waiting Room feat. Jordan Ward - Jenevieve",
+        path:"./musicplayer/songs/WAITING-ROOM.mp3"
+      },
+      {
+        name:"BANG BANG - IVE",
+        path:"./musicplayer/songs/BANG-BANG.mp3"
+      },
+      {
+        name:"404 (The New Era) - KiiiKiii",
+        path:"./musicplayer/songs/404.mp3"
+      },
+      {
+        name:"RUDE! by Hearts2Hearts",
+        path:"./musicplayer/songs/RUDE.mp3"
+      },
+      {
+        name:"Miss That - Naomi Sharon",
+        path:"./musicplayer/songs/MISS-THAT.mp3"
+      },
+      {
+        name:"TELL ME WHAT I DID - Tiffany Day",
+        path:"./musicplayer/songs/TELL-ME-WHAT-I-DID.mp3"
+      },
+      {
+        name:"Losing You - Naomi Scott",
+        path:"./musicplayer/songs/LOSING-YOU.mp3"
+      },
+      {
+        name:"HELICOPTER - A$AP Rocky",
+        path:"./musicplayer/songs/HELICOPTER.mp3"
+      }
+    ];
+          //
+          //
+          //
+          //
+          //
+  
+    function loadTrack(track_index) {
+      clearInterval(updateTimer);
+      resetValues();
+  
+      // load a new track
+      curr_track.src = track_list[track_index].path;
+      curr_track.load();
+  
+      // update details of the track
+      track_name.textContent = "playing " + (track_index + 1) + " of " + track_list.length + ": " + track_list[track_index].name;
+  
+      // set an interval of 1000 milliseconds for updating the seek slider
+      updateTimer = setInterval(seekUpdate, 1000);
+  
+      // move to the next track if the current one finishes playing 
+      curr_track.addEventListener("ended", nextTrack);
+    }
+  
+    // reset values
+    function resetValues() {
+      curr_time.textContent = "0:00";
+      total_duration.textContent = "0:00";
+      seek_slider.value = 0;
+    }
+  
+    // checks if song is playing
+    function playpauseTrack() {
+      if (!isPlaying) playTrack();
+      else pauseTrack();
+    }
+  
+    // plays track when play button is pressed
+    function playTrack() {
+      curr_track.play();
+      isPlaying = true;
+  
+      // replace icon with the pause icon
+      playpause_btn.innerHTML = '<button><img src="./musicplayer/pause.png" class="controlimg"></i></button>';
+    }
+  
+    // pauses track when pause button is pressed
+    function pauseTrack() {
+      curr_track.pause();
+      isPlaying = false;
+  
+      // replace icon with the play icon
+      playpause_btn.innerHTML = '<button><img src="./musicplayer/play.png" class="controlimg"></button>';
+    }
+  
+    // moves to the next track
+    function nextTrack() {
+      if (track_index < track_list.length - 1)
+        track_index += 1;
+      else track_index = 0;
+      loadTrack(track_index);
+      playTrack();
+    }
+  
+    // moves to the previous track
+    function prevTrack() {
+      if (track_index > 0)
+        track_index -= 1;
+      else track_index = track_list.length;
+      loadTrack(track_index);
+      playTrack();
+    }
+  
+    // seeker slider
+    function seekTo() {
+      seekto = curr_track.duration * (seek_slider.value / 100);
+      curr_track.currentTime = seekto;
+    }
+  
+    function seekUpdate() {
+      let seekPosition = 0;
+  
+      // check if the current track duration is a legible number
+      if (!isNaN(curr_track.duration)) {
+        seekPosition = curr_track.currentTime * (100 / curr_track.duration);
+        seek_slider.value = seekPosition;
+  
+        // calculate the time left and the total duration
+        let currentMinutes = Math.floor(curr_track.currentTime / 60);
+        let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
+        let durationMinutes = Math.floor(curr_track.duration / 60);
+        let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
+  
+        // adding a zero to the single digit time values
+        if (currentSeconds < 10) { currentSeconds = "0" + currentSeconds; }
+        if (durationSeconds < 10) { durationSeconds = "0" + durationSeconds; }
+        if (currentMinutes < 10) { currentMinutes = currentMinutes; }
+        if (durationMinutes < 10) { durationMinutes = durationMinutes; }
+  
+        curr_time.textContent = currentMinutes + ":" + currentSeconds;
+        total_duration.textContent = durationMinutes + ":" + durationSeconds;
+      }
+    }
+  
+    // load the first track in the tracklist
+    loadTrack(track_index);
+  </script>
+</html>
