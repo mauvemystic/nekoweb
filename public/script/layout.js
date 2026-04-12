@@ -316,6 +316,7 @@ function headerHTML() {
           <details name="tab"><summary> My Interests</summary>
             <ul>
               <li><a href="/medialog" class="hvr-wobble-horizontal">&nbsp;media log</a></li>
+              <li><a href="/playlist" class="hvr-wobble-horizontal">&nbsp;2026 playlist</a></li>
               <li><a href="/collections" class="hvr-wobble-horizontal">&nbsp;collections</a></li>
               <li><a href="/lists/" class="hvr-wobble-horizontal">&nbsp;my lists</a></li>
               <li><a href="/altar" class="hvr-wobble-horizontal">&nbsp;altar</a></li>
@@ -356,6 +357,7 @@ function headerHTML() {
           <details name="tab"><summary> My Interests</summary>
             <ul>
               <li><a href="/medialog" class="hvr-wobble-horizontal">&nbsp;media log</a></li>
+              <li><a href="/playlist" class="hvr-wobble-horizontal">&nbsp;2026 playlist</a></li>
               <li><a href="/collections" class="hvr-wobble-horizontal">&nbsp;collections</a></li>
               <li><a href="/lists/" class="hvr-wobble-horizontal">&nbsp;my lists</a></li>
               <li><a href="/altar" class="hvr-wobble-horizontal">&nbsp;altar</a></li>
@@ -420,24 +422,24 @@ function headerHTML() {
         <div class="sidebar-section deskside">
         <div class="sidebar-title">Currently</div>
           <ul>
-            <li><span class="bold">date</span> <time datetime="2026-04-01">04.01.2026<time></li>
+            <li><span class="bold">date</span> <time datetime="2026-04-11">04.11.2026<time></li>
             <li><span class="bold">watching</span> jujutsu kaisen season 3</li>
             <li><span class="bold">reading</span> nothing atm</li>
-            <li><span class="bold">playing</span> Murdoku</li>
-            <li><span class="bold">learning</span> how to use Linux</li>
-            <li><span class="bold">loving</span> my job so far!!</li>
+            <li><span class="bold">playing</span> Phoenix Wright: Ace Attorney - Spirit of Justice Justice </li>
+            <li><span class="bold">learning</span> how to use Linux again</li>
+            <li><span class="bold">loving</span> short-rib fried rice 🍚</li>
           </ul>
         
         </div>
 
         <details id="statusdrop"><summary><div id="statusdrophead">Currently</div></summary>
           <ul>
-            <li><span class="bold">date</span> <time datetime="2026-04-01">04.01.2026<time></li>
-            <li><span class="bold">watching</span> jujutsu kaisen season 3</li>
+            <li><span class="bold">date</span> <time datetime="2026-04-11">04.11.2026<time></li>
+            <li><span class="bold">watching</span> Jujutsu Kaisen, season 3</li>
             <li><span class="bold">reading</span> nothing atm</li>
-            <li><span class="bold">playing</span> Murdoku</li>
-            <li><span class="bold">learning</span> how to use Linux</li>
-            <li><span class="bold">loving</span> my job so far!!</li>
+            <li><span class="bold">playing</span> Phoenix Wright: Ace Attorney - Spirit of Justice Justice</li>
+            <li><span class="bold">learning</span> how to use Linux again</li>
+            <li><span class="bold">loving</span> short-rib fried rice 🍚</li>
           </ul>
           </details>
         </div>
